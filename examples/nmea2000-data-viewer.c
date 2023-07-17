@@ -37,6 +37,7 @@ static struct s_nmea2000_data {
 	double drift_angle;
 	double AWS;
 	double AWA;
+	double rudder_angle;
 } nmea2000_data;
 
 static void pgn_parser(struct PNG_s *pgn)
@@ -82,12 +83,7 @@ static void pgn_parser(struct PNG_s *pgn)
 			pgn_time2tm(pgn->data.system_time.date, pgn->data.system_time.time, &nmea2000_data.tm);
 			break;
 		case PGN_RUDDER_ID:
-			MSG_DUMP("PGN rudder                  : %X %X %d\n", pgn->header.i, pgni, pgni);
-			MSG_DUMP("  sender                    : %d\n", pgn->header.s.sa, pgn->header.s.sa);
-			MSG_DUMP("  instance                  : %d\n", pgn->data.rudder.instance);
-			MSG_DUMP("  direction_order           : %d\n", pgn->data.rudder.direction_order);
-			MSG_DUMP("  angle_order               : %f degrees\n", RAD2DEG(pgn->data.rudder.angle_order*0.0001f));
-			MSG_DUMP("  position                  : %f degrees\n", RAD2DEG(pgn->data.rudder.position*0.0001f));
+			nmea2000_data.rudder_angle = RAD2DEG(pgn->data.rudder.position*0.0001f);
 			break;
 		case PGN_VESSEL_HEADING_ID:
 			MSG_DUMP("PGN vessel heading          : %X %X %d\n", pgn->header.i, pgni, pgni);
@@ -221,6 +217,7 @@ static void *data_viewer(void *arg)
 		mvprintw(3,0, "STW               : %2.2f m/s\n", nmea2000_data.STW);
 		mvprintw(5,0, "Drift speed/angle : %2.2f m/s %3.0f°\n", nmea2000_data.drift_speed, nmea2000_data.drift_angle);
 		mvprintw(7,0, "AWS/AWA           : %2.2f m/s %3.0f°\n", nmea2000_data.AWS, nmea2000_data.AWA);
+		mvprintw(9,0, "Rudder angle      : %3.0f°\n", nmea2000_data.rudder_angle);
 		mvprintw(20, 0, "map url : https://www.google.com/maps/@?api=1&map_action=map&center=%f,%f&basemap=satellite\n",
 			nmea2000_data.longitude, nmea2000_data.latitude);
 		refresh();
