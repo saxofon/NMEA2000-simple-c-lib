@@ -1,0 +1,15 @@
+* integrate as shared library
+
+* make ydwg a backend of nmea2000 layer.
+  applications will use NMEA2000 API's,
+  init with backend and it's needed configs.
+
+* add socketcan backend
+
+* multiple nmea input streams?
+  if similar data, build up redudandency tables, check data consistency, mark devices
+  healthy/unhealthy...
+
+* investigate on following PGNS
+  - 128259_speed
+  - 129026_cogsog_rapid_update

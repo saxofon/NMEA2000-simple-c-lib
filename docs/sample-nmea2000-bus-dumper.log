@@ -1,0 +1,2778 @@
+Socket successfully created..
+connected to YDWG.
+PGN wind data               : 9FD0219 1FD02 130306
+  sender                    : 9
+  SID                       : 255
+  AWS                       : 1.5 m/s
+  AWA                       : 232.0 degrees
+  reference                 : 2
+PGN unknown : 11F80E2B 1F80E 129038
+  sender    : 17
+  data      : 60 1C 1 2A 7F D3 F F5
+PGN wind data               : 9FD0220 1FD02 130306
+  sender                    : 9
+  SID                       : 255
+  AWS                       : 1.5 m/s
+  AWA                       : 232.0 degrees
+  reference                 : 2
+PGN unknown : 11F80E2B 1F80E 129038
+  sender    : 17
+  data      : 61 A5 E9 A 21 2B 70 23
+PGN env param               : 15FD0723 1FD07 130311
+  sender                    : 21
+  SID                       : 255
+  temp source               : 0
+  humidity source           : 3
+  temperature               : 20.670007 degrees celsius
+  humidity                  : 131.068008 %
+  atmospheric pressure      : 6553500.000000 Pascal
+PGN unknown : 11F80E2B 1F80E 129038
+  sender    : 17
+  data      : 62 EF D7 19 0 0 A9 8
+PGN unknown : 11F80E2B 1F80E 129038
+  sender    : 17
+  data      : 63 9 FF FF FF 7F F 0
+PGN unknown : 11F80E2B 1F80E 129038
+  sender    : 17
+  data      : 64 FF FF FF FF FF FF FF
+PGN cogsog rapid update     : 9F80200 1F802 129026
+  sender                    : 9
+  SID                       : 255
+  cog reference             : 0
+  cog                       : 375.487854 degrees
+  sog                       : 655.349976 m/s
+PGN position rapid update   : 9F80100 1F801 129025
+  sender                    : 9
+  longitude                 : 59.456990 degrees
+  latitude                  : 18.282880 degrees
+  google maps url           : https://www.google.com/maps/@?api=1&map_action=map&center=59.456990,18.282880&basemap=satellite
+PGN drift rapid update      : DF90B00 1F90B 129291
+  sender                    : 13
+  SID                       : 255
+  reference                 : 0
+  set                       : 7.414073 degrees
+  drift                     : 0.000000 m/s
+PGN wind data               : 9FD0219 1FD02 130306
+  sender                    : 9
+  SID                       : 255
+  AWS                       : 1.5 m/s
+  AWA                       : 232.0 degrees
+  reference                 : 2
+PGN wind data               : 9FD0220 1FD02 130306
+  sender                    : 9
+  SID                       : 255
+  AWS                       : 1.5 m/s
+  AWA                       : 232.0 degrees
+  reference                 : 2
+PGN position rapid update   : 9F8012B 1F801 129025
+  sender                    : 9
+  longitude                 : 59.456983 degrees
+  latitude                  : 18.282895 degrees
+  google maps url           : https://www.google.com/maps/@?api=1&map_action=map&center=59.456983,18.282895&basemap=satellite
+PGN position rapid update   : 9F80100 1F801 129025
+  sender                    : 9
+  longitude                 : 59.456990 degrees
+  latitude                  : 18.282880 degrees
+  google maps url           : https://www.google.com/maps/@?api=1&map_action=map&center=59.456990,18.282880&basemap=satellite
+PGN vessel heading          : 9F11273 1F112 127250
+  sender                    : 9
+  SID                       : 0
+  heading                   : 322.128326
+  deviation                 : 187.741074
+  variation                 : 187.741074
+  reference                 : 1
+PGN rudder                  : 9F10D73 1F10D 127245
+  sender                    : 9
+  instance                  : 255
+  direction_order           : 0
+  angle_order               : -0.005730 degrees
+  position                  : 0.000000 degrees
+PGN seatalk alarm           : 1CFF0873 FF08 65288
+  sender                    : 28
+  manufacurer_code          : 1851
+  industry_code             : 4
+  SID                       : 0
+  alarm_status              : 0
+  alarm_id                  : 20
+  alarm_group               : 0
+  alarm_priority            : 65535
+PGN seatalk pilot heading : 1CFF4F73 FF4F 65359
+  sender                    : 28
+  manufacurer_code          : 1851
+  industry_code             : 4
+  SID                       : 0
+  heading_true              : 375.487854
+  heading_magnetic          : 322.128326
+PGN unknown : 1DEFFF73 1EFFF 126975
+  sender    : 29
+  data      : 80 16 3B 9F F0 81 84 36
+PGN unknown : 1DEFFF73 1EFFF 126975
+  sender    : 29
+  data      : 81 9A 88 40 0 0 2 8
+PGN unknown : 1DEFFF73 1EFFF 126975
+  sender    : 29
+  data      : 82 0 0 0 0 0 0 0
+PGN unknown : 1DEFFF73 1EFFF 126975
+  sender    : 29
+  data      : 83 0 0 FF FF FF FF FF
+PGN wind data               : 9FD0219 1FD02 130306
+  sender                    : 9
+  SID                       : 255
+  AWS                       : 1.5 m/s
+  AWA                       : 232.0 degrees
+  reference                 : 2
+PGN wind data               : 9FD0220 1FD02 130306
+  sender                    : 9
+  SID                       : 255
+  AWS                       : 1.5 m/s
+  AWA                       : 232.0 degrees
+  reference                 : 2
+PGN position rapid update   : 9F8012B 1F801 129025
+  sender                    : 9
+  longitude                 : 59.456983 degrees
+  latitude                  : 18.282895 degrees
+  google maps url           : https://www.google.com/maps/@?api=1&map_action=map&center=59.456983,18.282895&basemap=satellite
+PGN cogsog rapid update     : 9F8022B 1F802 129026
+  sender                    : 9
+  SID                       : 255
+  cog reference             : 0
+  cog                       : 0.000000 degrees
+  sog                       : 0.000000 m/s
+PGN cogsog rapid update     : 9F80200 1F802 129026
+  sender                    : 9
+  SID                       : 255
+  cog reference             : 0
+  cog                       : 375.487854 degrees
+  sog                       : 655.349976 m/s
+PGN unknown : DFE1100 1FE11 130577
+  sender    : 13
+  data      : 20 E C0 B2 FF FF FF FF
+PGN unknown : DFE1100 1FE11 130577
+  sender    : 13
+  data      : 21 FF FF FF FF E 5 0
+PGN unknown : DFE1100 1FE11 130577
+  sender    : 13
+  data      : 22 0 FF FF FF FF FF FF
+PGN position rapid update   : 9F80100 1F801 129025
+  sender                    : 9
+  longitude                 : 59.456990 degrees
+  latitude                  : 18.282880 degrees
+  google maps url           : https://www.google.com/maps/@?api=1&map_action=map&center=59.456990,18.282880&basemap=satellite
+PGN wind data               : 9FD0219 1FD02 130306
+  sender                    : 9
+  SID                       : 255
+  AWS                       : 1.5 m/s
+  AWA                       : 232.0 degrees
+  reference                 : 2
+PGN wind data               : 9FD0220 1FD02 130306
+  sender                    : 9
+  SID                       : 255
+  AWS                       : 1.5 m/s
+  AWA                       : 232.0 degrees
+  reference                 : 2
+PGN env param               : 15FD0719 1FD07 130311
+  sender                    : 21
+  SID                       : 255
+  temp source               : 1
+  humidity source           : 3
+  temperature               : 20.999994 degrees celsius
+  humidity                  : -0.004000 %
+  atmospheric pressure      : 100900.000000 Pascal
+PGN position rapid update   : 9F8012B 1F801 129025
+  sender                    : 9
+  longitude                 : 59.456983 degrees
+  latitude                  : 18.282895 degrees
+  google maps url           : https://www.google.com/maps/@?api=1&map_action=map&center=59.456983,18.282895&basemap=satellite
+PGN crosstrack error        : DF90300 1F903 129283
+  sender                    : 13
+  SID                       : 255
+  xte_mode                  : 15
+  navigation_terminated     : 1
+  xte                       : 21474836.000000 m
+PGN position rapid update   : 9F80100 1F801 129025
+  sender                    : 9
+  longitude                 : 59.456990 degrees
+  latitude                  : 18.282880 degrees
+  google maps url           : https://www.google.com/maps/@?api=1&map_action=map&center=59.456990,18.282880&basemap=satellite
+PGN wind data               : 9FD0219 1FD02 130306
+  sender                    : 9
+  SID                       : 255
+  AWS                       : 1.5 m/s
+  AWA                       : 232.0 degrees
+  reference                 : 2
+PGN wind data               : 9FD0220 1FD02 130306
+  sender                    : 9
+  SID                       : 255
+  AWS                       : 1.5 m/s
+  AWA                       : 232.0 degrees
+  reference                 : 2
+PGN position rapid update   : 9F8012B 1F801 129025
+  sender                    : 9
+  longitude                 : 59.456983 degrees
+  latitude                  : 18.282895 degrees
+  google maps url           : https://www.google.com/maps/@?api=1&map_action=map&center=59.456983,18.282895&basemap=satellite
+PGN cogsog rapid update     : 9F80200 1F802 129026
+  sender                    : 9
+  SID                       : 255
+  cog reference             : 0
+  cog                       : 375.487854 degrees
+  sog                       : 655.349976 m/s
+PGN position rapid update   : 9F80100 1F801 129025
+  sender                    : 9
+  longitude                 : 59.456990 degrees
+  latitude                  : 18.282880 degrees
+  google maps url           : https://www.google.com/maps/@?api=1&map_action=map&center=59.456990,18.282880&basemap=satellite
+PGN unknown : 19FA0300 1FA03 129539
+  sender    : 25
+  data      : 0 DB 43 0 57 0 36 0
+PGN unknown : 19FA0600 1FA06 129542
+  sender    : 25
+  data      : 40 F B3 50 0 FF FF FF
+PGN unknown : 19FA0600 1FA06 129542
+  sender    : 25
+  data      : 41 FF FF FF FF FF FF FF
+PGN unknown : 19FA0600 1FA06 129542
+  sender    : 25
+  data      : 42 FF FF FF FF FF FF FF
+PGN unknown : 19FA0B00 1FA0B 129547
+  sender    : 25
+  data      : 40 F B3 CC 1 42 0 2C
+PGN unknown : 19FA0B00 1FA0B 129547
+  sender    : 25
+  data      : 41 0 1C 11 3E 0 31 0
+PGN unknown : 19FA0B00 1FA0B 129547
+  sender    : 25
+  data      : 42 60 0 FF FF FF FF FF
+PGN cogsog rapid update     : 9F8022B 1F802 129026
+  sender                    : 9
+  SID                       : 255
+  cog reference             : 0
+  cog                       : 0.000000 degrees
+  sog                       : 0.000000 m/s
+PGN water depth             : DF50B23 1F50B 128267
+  sender                    : 13
+  SID                       : 255
+  depth                     : 3.20 m
+  offset                    : 0.0000 m
+  range                     : 255
+PGN wind data               : 9FD0219 1FD02 130306
+  sender                    : 9
+  SID                       : 255
+  AWS                       : 1.4 m/s
+  AWA                       : 233.0 degrees
+  reference                 : 2
+PGN speed                   : 9F50323 1F503 128259
+  sender                    : 9
+  SID                       : 255
+  speed ref water           : 0.000000 m/s
+  speed ref ground          : 655.349976 m/s
+  speed ref water type      : 0
+  speed direction           : 15
+PGN unknown : 19F51323 1F513 128275
+  sender    : 25
+  data      : E0 E FF FF FF FF FF FF
+PGN wind data               : 9FD0220 1FD02 130306
+  sender                    : 9
+  SID                       : 255
+  AWS                       : 1.4 m/s
+  AWA                       : 233.0 degrees
+  reference                 : 2
+PGN env param               : 15FD0723 1FD07 130311
+  sender                    : 21
+  SID                       : 255
+  temp source               : 0
+  humidity source           : 3
+  temperature               : 20.640009 degrees celsius
+  humidity                  : 131.068008 %
+  atmospheric pressure      : 6553500.000000 Pascal
+PGN unknown : 19F51323 1F513 128275
+  sender    : 25
+  data      : E1 59 F5 3A 0 59 F5 3A
+PGN unknown : 19F51323 1F513 128275
+  sender    : 25
+  data      : E2 0 FF FF FF FF FF FF
+PGN position rapid update   : 9F8012B 1F801 129025
+  sender                    : 9
+  longitude                 : 59.456983 degrees
+  latitude                  : 18.282895 degrees
+  google maps url           : https://www.google.com/maps/@?api=1&map_action=map&center=59.456983,18.282895&basemap=satellite
+PGN unknown : 11F80E2B 1F80E 129038
+  sender    : 17
+  data      : 80 1C 1 34 45 CC F 51
+PGN unknown : 11F80E2B 1F80E 129038
+  sender    : 17
+  data      : 81 23 ED A 2 F3 6F 23
+PGN unknown : 19FA0400 1FA04 129540
+  sender    : 25
+  data      : 40 DB B3 FF 12 4 C6 4
+PGN unknown : 19FA0400 1FA04 129540
+  sender    : 25
+  data      : 41 2D 44 28 A 0 0 0
+PGN unknown : 19FA0400 1FA04 129540
+  sender    : 25
+  data      : 42 0 F2 5 A2 1C 7C CA
+PGN unknown : 19FA0400 1FA04 129540
+  sender    : 25
+  data      : 43 74 E 0 0 0 0 F2
+PGN unknown : 19FA0400 1FA04 129540
+  sender    : 25
+  data      : 44 7 16 31 D0 51 B8 B
+PGN unknown : 19FA0400 1FA04 129540
+  sender    : 25
+  data      : 45 0 0 0 0 F2 9 DD
+PGN unknown : 19FA0400 1FA04 129540
+  sender    : 25
+  data      : 46 17 44 48 E4 C 0 0
+PGN unknown : 19FA0400 1FA04 129540
+  sender    : 25
+  data      : 47 0 0 F2 B 46 C 43
+PGN unknown : 19FA0400 1FA04 129540
+  sender    : 25
+  data      : 48 A2 74 E 0 0 0 0
+PGN unknown : 19FA0400 1FA04 129540
+  sender    : 25
+  data      : 49 F2 D E9 A C2 B8 60
+PGN unknown : 19FA0400 1FA04 129540
+  sender    : 25
+  data      : 4A 9 0 0 0 0 F2 14
+PGN unknown : 19FA0400 1FA04 129540
+  sender    : 25
+  data      : 4B 2E 26 DA AD D8 E 0
+PGN unknown : 19FA0400 1FA04 129540
+  sender    : 25
+  data      : 4C 0 0 0 F2 1B 74 5
+PGN unknown : 19FA0400 1FA04 129540
+  sender    : 25
+  data      : 4D 2E 26 60 9 0 0 0
+PGN unknown : 11F80E2B 1F80E 129038
+  sender    : 17
+  data      : 82 EF FF FF 0 0 DD 8
+PGN unknown : 19FA0400 1FA04 129540
+  sender    : 25
+  data      : 4E 0 F2 1E 39 28 FE 86
+PGN unknown : 19FA0400 1FA04 129540
+  sender    : 25
+  data      : 4F 10 E 0 0 0 0 F2
+PGN unknown : 19FA0400 1FA04 129540
+  sender    : 25
+  data      : 50 41 97 1A E5 CD 80 C
+PGN unknown : 19FA0400 1FA04 129540
+  sender    : 25
+  data      : 51 0 0 0 0 F2 47 74
+PGN unknown : 19FA0400 1FA04 129540
+  sender    : 25
+  data      : 52 14 7E 52 80 C 0 0
+PGN unknown : 19FA0400 1FA04 129540
+  sender    : 25
+  data      : 53 0 0 F2 48 96 38 67
+PGN unknown : 19FA0400 1FA04 129540
+  sender    : 25
+  data      : 54 4E F0 A 0 0 0 0
+PGN unknown : 19FA0400 1FA04 129540
+  sender    : 25
+  data      : 55 F2 49 17 22 7F 25 C4
+PGN unknown : 19FA0400 1FA04 129540
+  sender    : 25
+  data      : 56 9 0 0 0 0 F2 4A
+PGN unknown : 19FA0400 1FA04 129540
+  sender    : 25
+  data      : 57 39 28 38 64 8C A 0
+PGN unknown : 19FA0400 1FA04 129540
+  sender    : 25
+  data      : 58 0 0 0 F2 4B 8B 9
+PGN unknown : 19FA0400 1FA04 129540
+  sender    : 25
+  data      : 59 2C 80 E4 C 0 0 0
+PGN unknown : 19FA0400 1FA04 129540
+  sender    : 25
+  data      : 5A 0 F2 51 B 11 1F E7
+PGN unknown : 19FA0400 1FA04 129540
+  sender    : 25
+  data      : 5B 28 A 0 0 0 0 F2
+PGN unknown : 11F80E2B 1F80E 129038
+  sender    : 17
+  data      : 83 0 FF FF FF 7F 0 0
+PGN unknown : 19FA0400 1FA04 129540
+  sender    : 25
+  data      : 5C 58 46 C F1 C0 74 E
+PGN unknown : 19FA0400 1FA04 129540
+  sender    : 25
+  data      : 5D 0 0 0 0 F2 31 0
+PGN unknown : 19FA0400 1FA04 129540
+  sender    : 25
+  data      : 5E F F2 84 80 C 0 0
+PGN unknown : 19FA0400 1FA04 129540
+  sender    : 25
+  data      : 5F 0 0 F1 FF FF FF FF
+PGN position rapid update   : 9F80100 1F801 129025
+  sender                    : 9
+  longitude                 : 59.456990 degrees
+  latitude                  : 18.282880 degrees
+  google maps url           : https://www.google.com/maps/@?api=1&map_action=map&center=59.456990,18.282880&basemap=satellite
+PGN magnetic variation      : 19F11A00 1F11A 127258
+  sender                    : 25
+  SID                       : 255
+  source                    : 15
+  age_of_service            : 65535
+  variation                 : 7.414073
+PGN unknown : 11F80E2B 1F80E 129038
+  sender    : 17
+  data      : 84 FF FF FF FF FF FF FF
+PGN wind data               : 9FD0219 1FD02 130306
+  sender                    : 9
+  SID                       : 255
+  AWS                       : 1.4 m/s
+  AWA                       : 233.0 degrees
+  reference                 : 2
+PGN wind data               : 9FD0220 1FD02 130306
+  sender                    : 9
+  SID                       : 255
+  AWS                       : 1.4 m/s
+  AWA                       : 233.0 degrees
+  reference                 : 2
+PGN cogsog rapid update     : 9F80200 1F802 129026
+  sender                    : 9
+  SID                       : 255
+  cog reference             : 0
+  cog                       : 375.487854 degrees
+  sog                       : 655.349976 m/s
+PGN position rapid update   : 9F80100 1F801 129025
+  sender                    : 9
+  longitude                 : 59.456990 degrees
+  latitude                  : 18.282880 degrees
+  google maps url           : https://www.google.com/maps/@?api=1&map_action=map&center=59.456990,18.282880&basemap=satellite
+PGN position rapid update   : 9F8012B 1F801 129025
+  sender                    : 9
+  longitude                 : 59.456983 degrees
+  latitude                  : 18.282895 degrees
+  google maps url           : https://www.google.com/maps/@?api=1&map_action=map&center=59.456983,18.282895&basemap=satellite
+PGN wind data               : 9FD0219 1FD02 130306
+  sender                    : 9
+  SID                       : 255
+  AWS                       : 1.4 m/s
+  AWA                       : 233.0 degrees
+  reference                 : 2
+PGN wind data               : 9FD0220 1FD02 130306
+  sender                    : 9
+  SID                       : 255
+  AWS                       : 1.4 m/s
+  AWA                       : 233.0 degrees
+  reference                 : 2
+PGN unknown : DF80500 1F805 129029
+  sender    : 13
+  data      : 40 2B B3 62 4C C8 CA 44
+PGN unknown : DF80500 1F805 129029
+  sender    : 13
+  data      : 41 28 0 AA A9 AD 2D 56
+PGN unknown : DF80500 1F805 129029
+  sender    : 13
+  data      : 42 40 8 0 0 B6 2E D3
+PGN unknown : DF80500 1F805 129029
+  sender    : 13
+  data      : 43 89 89 2 40 17 A2 1
+PGN unknown : DF80500 1F805 129029
+  sender    : 13
+  data      : 44 0 0 0 0 13 FC 11
+PGN unknown : DF80500 1F805 129029
+  sender    : 13
+  data      : 45 43 0 FF 7F FF FF FF
+PGN unknown : DF80500 1F805 129029
+  sender    : 13
+  data      : 46 7F 0 FF FF FF FF FF
+PGN position rapid update   : 9F80100 1F801 129025
+  sender                    : 9
+  longitude                 : 59.456990 degrees
+  latitude                  : 18.282880 degrees
+  google maps url           : https://www.google.com/maps/@?api=1&map_action=map&center=59.456990,18.282880&basemap=satellite
+PGN time date               : DF80900 1F809 129033
+  date                      : 19554
+  time                      : 675597000
+  local_offset              : 120 minutes from UTC
+  date/time                 : Sun Jul 16 20:45:59 2023
+
+PGN vessel heading          : 9F11273 1F112 127250
+  sender                    : 9
+  SID                       : 0
+  heading                   : 322.128326
+  deviation                 : 187.741074
+  variation                 : 187.741074
+  reference                 : 1
+PGN rudder                  : 9F10D73 1F10D 127245
+  sender                    : 9
+  instance                  : 255
+  direction_order           : 0
+  angle_order               : -0.005730 degrees
+  position                  : 0.000000 degrees
+PGN seatalk pilot heading : 1CFF4F73 FF4F 65359
+  sender                    : 28
+  manufacurer_code          : 1851
+  industry_code             : 4
+  SID                       : 0
+  heading_true              : 375.487854
+  heading_magnetic          : 322.128326
+PGN unknown : 1DEFFF73 1EFFF 126975
+  sender    : 29
+  data      : A0 16 3B 9F F0 81 9C 31
+PGN unknown : 1DEFFF73 1EFFF 126975
+  sender    : 29
+  data      : A1 1A 0 0 80 0 0 0
+PGN unknown : 1DEFFF73 1EFFF 126975
+  sender    : 29
+  data      : A2 0 FF 0 0 0 0 0
+PGN position rapid update   : 9F8012B 1F801 129025
+  sender                    : 9
+  longitude                 : 59.456983 degrees
+  latitude                  : 18.282895 degrees
+  google maps url           : https://www.google.com/maps/@?api=1&map_action=map&center=59.456983,18.282895&basemap=satellite
+PGN unknown : 1DEFFF73 1EFFF 126975
+  sender    : 29
+  data      : A3 0 0 FF FF FF FF FF
+PGN cogsog rapid update     : 9F8022B 1F802 129026
+  sender                    : 9
+  SID                       : 255
+  cog reference             : 0
+  cog                       : 0.000000 degrees
+  sog                       : 0.000000 m/s
+PGN wind data               : 9FD0219 1FD02 130306
+  sender                    : 9
+  SID                       : 255
+  AWS                       : 1.4 m/s
+  AWA                       : 233.0 degrees
+  reference                 : 2
+PGN wind data               : 9FD0220 1FD02 130306
+  sender                    : 9
+  SID                       : 255
+  AWS                       : 1.4 m/s
+  AWA                       : 233.0 degrees
+  reference                 : 2
+PGN env param               : 15FD0719 1FD07 130311
+  sender                    : 21
+  SID                       : 255
+  temp source               : 1
+  humidity source           : 3
+  temperature               : 20.999994 degrees celsius
+  humidity                  : -0.004000 %
+  atmospheric pressure      : 100900.000000 Pascal
+PGN cogsog rapid update     : 9F80200 1F802 129026
+  sender                    : 9
+  SID                       : 255
+  cog reference             : 0
+  cog                       : 375.487854 degrees
+  sog                       : 655.349976 m/s
+PGN position rapid update   : 9F80100 1F801 129025
+  sender                    : 9
+  longitude                 : 59.456990 degrees
+  latitude                  : 18.282880 degrees
+  google maps url           : https://www.google.com/maps/@?api=1&map_action=map&center=59.456990,18.282880&basemap=satellite
+PGN system time             : DF01000 126992
+  sender                    : 13
+  SID                       : 255
+  source                    : 15
+  date                      : 19554
+  time                      : 67559.796875
+  date/time                 : Sun Jul 16 20:45:59 2023
+
+PGN unknown : 1DFB012B 1FB01 129793
+  sender    : 29
+  data      : A0 1B 4 5D 83 28 0 E8
+PGN unknown : 1DFB012B 1FB01 129793
+  sender    : 29
+  data      : A1 EE CD A 21 CF 5D 23
+PGN unknown : 1DFB012B 1FB01 129793
+  sender    : 29
+  data      : A2 0 70 AF 44 28 CA 8
+PGN wind data               : 9FD0219 1FD02 130306
+  sender                    : 9
+  SID                       : 255
+  AWS                       : 1.4 m/s
+  AWA                       : 233.0 degrees
+  reference                 : 2
+PGN wind data               : 9FD0220 1FD02 130306
+  sender                    : 9
+  SID                       : 255
+  AWS                       : 1.4 m/s
+  AWA                       : 233.0 degrees
+  reference                 : 2
+PGN unknown : 1DFB012B 1FB01 129793
+  sender    : 29
+  data      : A3 0 62 4C 70 0 0 FF
+PGN position rapid update   : 9F8012B 1F801 129025
+  sender                    : 9
+  longitude                 : 59.456983 degrees
+  latitude                  : 18.282895 degrees
+  google maps url           : https://www.google.com/maps/@?api=1&map_action=map&center=59.456983,18.282895&basemap=satellite
+PGN position rapid update   : 9F80100 1F801 129025
+  sender                    : 9
+  longitude                 : 59.456990 degrees
+  latitude                  : 18.282880 degrees
+  google maps url           : https://www.google.com/maps/@?api=1&map_action=map&center=59.456990,18.282880&basemap=satellite
+PGN wind data               : 9FD0219 1FD02 130306
+  sender                    : 9
+  SID                       : 255
+  AWS                       : 1.4 m/s
+  AWA                       : 233.0 degrees
+  reference                 : 2
+PGN wind data               : 9FD0220 1FD02 130306
+  sender                    : 9
+  SID                       : 255
+  AWS                       : 1.4 m/s
+  AWA                       : 233.0 degrees
+  reference                 : 2
+PGN env param               : 15FD0723 1FD07 130311
+  sender                    : 21
+  SID                       : 255
+  temp source               : 0
+  humidity source           : 3
+  temperature               : 20.640009 degrees celsius
+  humidity                  : 131.068008 %
+  atmospheric pressure      : 6553500.000000 Pascal
+PGN position rapid update   : 9F8012B 1F801 129025
+  sender                    : 9
+  longitude                 : 59.456983 degrees
+  latitude                  : 18.282895 degrees
+  google maps url           : https://www.google.com/maps/@?api=1&map_action=map&center=59.456983,18.282895&basemap=satellite
+PGN cogsog rapid update     : 9F80200 1F802 129026
+  sender                    : 9
+  SID                       : 255
+  cog reference             : 0
+  cog                       : 375.487854 degrees
+  sog                       : 655.349976 m/s
+PGN position rapid update   : 9F80100 1F801 129025
+  sender                    : 9
+  longitude                 : 59.456990 degrees
+  latitude                  : 18.282880 degrees
+  google maps url           : https://www.google.com/maps/@?api=1&map_action=map&center=59.456990,18.282880&basemap=satellite
+PGN drift rapid update      : DF90B00 1F90B 129291
+  sender                    : 13
+  SID                       : 255
+  reference                 : 0
+  set                       : 7.414073 degrees
+  drift                     : 0.000000 m/s
+PGN cogsog rapid update     : 9F8022B 1F802 129026
+  sender                    : 9
+  SID                       : 255
+  cog reference             : 0
+  cog                       : 0.000000 degrees
+  sog                       : 0.010000 m/s
+PGN wind data               : 9FD0219 1FD02 130306
+  sender                    : 9
+  SID                       : 255
+  AWS                       : 1.4 m/s
+  AWA                       : 234.0 degrees
+  reference                 : 2
+PGN wind data               : 9FD0220 1FD02 130306
+  sender                    : 9
+  SID                       : 255
+  AWS                       : 1.4 m/s
+  AWA                       : 234.0 degrees
+  reference                 : 2
+PGN position rapid update   : 9F8012B 1F801 129025
+  sender                    : 9
+  longitude                 : 59.456983 degrees
+  latitude                  : 18.282895 degrees
+  google maps url           : https://www.google.com/maps/@?api=1&map_action=map&center=59.456983,18.282895&basemap=satellite
+PGN position rapid update   : 9F80100 1F801 129025
+  sender                    : 9
+  longitude                 : 59.456990 degrees
+  latitude                  : 18.282880 degrees
+  google maps url           : https://www.google.com/maps/@?api=1&map_action=map&center=59.456990,18.282880&basemap=satellite
+PGN wind data               : 9FD0219 1FD02 130306
+  sender                    : 9
+  SID                       : 255
+  AWS                       : 1.4 m/s
+  AWA                       : 234.0 degrees
+  reference                 : 2
+PGN wind data               : 9FD0220 1FD02 130306
+  sender                    : 9
+  SID                       : 255
+  AWS                       : 1.4 m/s
+  AWA                       : 234.0 degrees
+  reference                 : 2
+PGN vessel heading          : 9F11273 1F112 127250
+  sender                    : 9
+  SID                       : 0
+  heading                   : 322.128326
+  deviation                 : 187.741074
+  variation                 : 187.741074
+  reference                 : 1
+PGN rudder                  : 9F10D73 1F10D 127245
+  sender                    : 9
+  instance                  : 255
+  direction_order           : 0
+  angle_order               : -0.005730 degrees
+  position                  : 0.000000 degrees
+PGN seatalk alarm           : 1CFF0873 FF08 65288
+  sender                    : 28
+  manufacurer_code          : 1851
+  industry_code             : 4
+  SID                       : 0
+  alarm_status              : 0
+  alarm_id                  : 20
+  alarm_group               : 0
+  alarm_priority            : 65535
+PGN seatalk pilot heading : 1CFF4F73 FF4F 65359
+  sender                    : 28
+  manufacurer_code          : 1851
+  industry_code             : 4
+  SID                       : 0
+  heading_true              : 375.487854
+  heading_magnetic          : 322.128326
+PGN unknown : 1DEFFF73 1EFFF 126975
+  sender    : 29
+  data      : C0 16 3B 9F F0 81 84 36
+PGN unknown : 1DEFFF73 1EFFF 126975
+  sender    : 29
+  data      : C1 9A 88 40 0 0 2 8
+PGN unknown : 1DEFFF73 1EFFF 126975
+  sender    : 29
+  data      : C2 0 FF 0 0 0 0 0
+PGN unknown : 1DEFFF73 1EFFF 126975
+  sender    : 29
+  data      : C3 0 0 FF FF FF FF FF
+PGN unknown : 15FD0A20 1FD0A 130314
+  sender    : 21
+  data      : FF 0 0 86 64 F 0 FF
+PGN position rapid update   : 9F8012B 1F801 129025
+  sender                    : 9
+  longitude                 : 59.456983 degrees
+  latitude                  : 18.282895 degrees
+  google maps url           : https://www.google.com/maps/@?api=1&map_action=map&center=59.456983,18.282895&basemap=satellite
+PGN temperature             : 15FD0820 1FD08 130312
+  sender                    : 21
+  SID                       : 255
+  instance                  : 0
+  source                    : 1
+  temperature               : 20.999994 degrees celsius
+  set_temperature           : 382.199976 degrees celsius
+PGN temperature extended    : 15FD0C20 1FD0C 130316
+  sender                    : 21
+  SID                       : 62
+  instance                  : 148
+  source                    : 255
+  temperature               : 6081.026367 degrees celsius
+  set_temperature           : -273.149994 degrees celsius
+PGN temperature             : 15FD0819 1FD08 130312
+  sender                    : 21
+  SID                       : 255
+  instance                  : 0
+  source                    : 1
+  temperature               : 20.999994 degrees celsius
+  set_temperature           : 382.199976 degrees celsius
+PGN cogsog rapid update     : 9F80200 1F802 129026
+  sender                    : 9
+  SID                       : 255
+  cog reference             : 0
+  cog                       : 375.487854 degrees
+  sog                       : 655.349976 m/s
+PGN unknown : DFE1100 1FE11 130577
+  sender    : 13
+  data      : 40 E C0 B3 FF FF FF FF
+PGN unknown : DFE1100 1FE11 130577
+  sender    : 13
+  data      : 41 FF FF FF FF E 5 0
+PGN unknown : DFE1100 1FE11 130577
+  sender    : 13
+  data      : 42 0 FF FF FF FF FF FF
+PGN position rapid update   : 9F80100 1F801 129025
+  sender                    : 9
+  longitude                 : 59.456990 degrees
+  latitude                  : 18.282880 degrees
+  google maps url           : https://www.google.com/maps/@?api=1&map_action=map&center=59.456990,18.282880&basemap=satellite
+PGN wind data               : 9FD0219 1FD02 130306
+  sender                    : 9
+  SID                       : 255
+  AWS                       : 1.4 m/s
+  AWA                       : 234.0 degrees
+  reference                 : 2
+PGN wind data               : 9FD0220 1FD02 130306
+  sender                    : 9
+  SID                       : 255
+  AWS                       : 1.4 m/s
+  AWA                       : 234.0 degrees
+  reference                 : 2
+PGN env param               : 15FD0719 1FD07 130311
+  sender                    : 21
+  SID                       : 255
+  temp source               : 1
+  humidity source           : 3
+  temperature               : 20.999994 degrees celsius
+  humidity                  : -0.004000 %
+  atmospheric pressure      : 100900.000000 Pascal
+PGN position rapid update   : 9F8012B 1F801 129025
+  sender                    : 9
+  longitude                 : 59.456983 degrees
+  latitude                  : 18.282895 degrees
+  google maps url           : https://www.google.com/maps/@?api=1&map_action=map&center=59.456983,18.282895&basemap=satellite
+PGN cogsog rapid update     : 9F8022B 1F802 129026
+  sender                    : 9
+  SID                       : 255
+  cog reference             : 0
+  cog                       : 0.000000 degrees
+  sog                       : 0.010000 m/s
+PGN crosstrack error        : DF90300 1F903 129283
+  sender                    : 13
+  SID                       : 255
+  xte_mode                  : 15
+  navigation_terminated     : 1
+  xte                       : 21474836.000000 m
+PGN position rapid update   : 9F80100 1F801 129025
+  sender                    : 9
+  longitude                 : 59.456990 degrees
+  latitude                  : 18.282880 degrees
+  google maps url           : https://www.google.com/maps/@?api=1&map_action=map&center=59.456990,18.282880&basemap=satellite
+PGN wind data               : 9FD0219 1FD02 130306
+  sender                    : 9
+  SID                       : 255
+  AWS                       : 1.4 m/s
+  AWA                       : 234.0 degrees
+  reference                 : 2
+PGN wind data               : 9FD0220 1FD02 130306
+  sender                    : 9
+  SID                       : 255
+  AWS                       : 1.4 m/s
+  AWA                       : 234.0 degrees
+  reference                 : 2
+PGN position rapid update   : 9F8012B 1F801 129025
+  sender                    : 9
+  longitude                 : 59.456983 degrees
+  latitude                  : 18.282895 degrees
+  google maps url           : https://www.google.com/maps/@?api=1&map_action=map&center=59.456983,18.282895&basemap=satellite
+PGN cogsog rapid update     : 9F80200 1F802 129026
+  sender                    : 9
+  SID                       : 255
+  cog reference             : 0
+  cog                       : 375.487854 degrees
+  sog                       : 655.349976 m/s
+PGN position rapid update   : 9F80100 1F801 129025
+  sender                    : 9
+  longitude                 : 59.456990 degrees
+  latitude                  : 18.282880 degrees
+  google maps url           : https://www.google.com/maps/@?api=1&map_action=map&center=59.456990,18.282880&basemap=satellite
+PGN unknown : 19FA0300 1FA03 129539
+  sender    : 25
+  data      : 0 DB 45 0 5A 0 39 0
+PGN unknown : 19FA0600 1FA06 129542
+  sender    : 25
+  data      : 60 F B4 50 0 FF FF FF
+PGN unknown : 19FA0600 1FA06 129542
+  sender    : 25
+  data      : 61 FF FF FF FF FF FF FF
+PGN unknown : 19FA0600 1FA06 129542
+  sender    : 25
+  data      : 62 FF FF FF FF FF FF FF
+PGN unknown : 19FA0B00 1FA0B 129547
+  sender    : 25
+  data      : 60 F B4 EE 1 42 0 2C
+PGN unknown : 19FA0B00 1FA0B 129547
+  sender    : 25
+  data      : 61 0 1C 11 3E 0 31 0
+PGN unknown : 19FA0B00 1FA0B 129547
+  sender    : 25
+  data      : 62 60 0 FF FF FF FF FF
+PGN water depth             : DF50B23 1F50B 128267
+  sender                    : 13
+  SID                       : 255
+  depth                     : 3.24 m
+  offset                    : 0.0000 m
+  range                     : 255
+PGN speed                   : 9F50323 1F503 128259
+  sender                    : 9
+  SID                       : 255
+  speed ref water           : 0.000000 m/s
+  speed ref ground          : 655.349976 m/s
+  speed ref water type      : 0
+  speed direction           : 15
+PGN unknown : 19F51323 1F513 128275
+  sender    : 25
+  data      : 0 E FF FF FF FF FF FF
+PGN wind data               : 9FD0219 1FD02 130306
+  sender                    : 9
+  SID                       : 255
+  AWS                       : 1.4 m/s
+  AWA                       : 234.0 degrees
+  reference                 : 2
+PGN env param               : 15FD0723 1FD07 130311
+  sender                    : 21
+  SID                       : 255
+  temp source               : 0
+  humidity source           : 3
+  temperature               : 20.659998 degrees celsius
+  humidity                  : 131.068008 %
+  atmospheric pressure      : 6553500.000000 Pascal
+PGN unknown : 19F51323 1F513 128275
+  sender    : 25
+  data      : 1 59 F5 3A 0 59 F5 3A
+PGN unknown : 19F51323 1F513 128275
+  sender    : 25
+  data      : 2 0 FF FF FF FF FF FF
+PGN wind data               : 9FD0220 1FD02 130306
+  sender                    : 9
+  SID                       : 255
+  AWS                       : 1.4 m/s
+  AWA                       : 234.0 degrees
+  reference                 : 2
+PGN position rapid update   : 9F8012B 1F801 129025
+  sender                    : 9
+  longitude                 : 59.456983 degrees
+  latitude                  : 18.282895 degrees
+  google maps url           : https://www.google.com/maps/@?api=1&map_action=map&center=59.456983,18.282895&basemap=satellite
+PGN unknown : 1CFFFF00 FFFF 65535
+  sender    : 28
+  data      : 4F 9A 0 F5 FF FF FF FF
+PGN unknown : 19FA0400 1FA04 129540
+  sender    : 25
+  data      : 60 DB B4 FF 12 4 C6 4
+PGN unknown : 19FA0400 1FA04 129540
+  sender    : 25
+  data      : 61 2D 44 28 A 0 0 0
+PGN unknown : 19FA0400 1FA04 129540
+  sender    : 25
+  data      : 62 0 F2 5 A2 1C 7C CA
+PGN unknown : 19FA0400 1FA04 129540
+  sender    : 25
+  data      : 63 74 E 0 0 0 0 F2
+PGN magnetic variation      : 19F11A00 1F11A 127258
+  sender                    : 25
+  SID                       : 255
+  source                    : 15
+  age_of_service            : 65535
+  variation                 : 7.414073
+PGN cogsog rapid update     : 9F8022B 1F802 129026
+  sender                    : 9
+  SID                       : 255
+  cog reference             : 0
+  cog                       : 0.000000 degrees
+  sog                       : 0.010000 m/s
+PGN wind data               : 9FD0219 1FD02 130306
+  sender                    : 9
+  SID                       : 255
+  AWS                       : 1.5 m/s
+  AWA                       : 236.0 degrees
+  reference                 : 2
+PGN wind data               : 9FD0220 1FD02 130306
+  sender                    : 9
+  SID                       : 255
+  AWS                       : 1.5 m/s
+  AWA                       : 236.0 degrees
+  reference                 : 2
+PGN position rapid update   : 9F8012B 1F801 129025
+  sender                    : 9
+  longitude                 : 59.456983 degrees
+  latitude                  : 18.282895 degrees
+  google maps url           : https://www.google.com/maps/@?api=1&map_action=map&center=59.456983,18.282895&basemap=satellite
+PGN cogsog rapid update     : 9F80200 1F802 129026
+  sender                    : 9
+  SID                       : 255
+  cog reference             : 0
+  cog                       : 375.487854 degrees
+  sog                       : 655.349976 m/s
+PGN position rapid update   : 9F80100 1F801 129025
+  sender                    : 9
+  longitude                 : 59.456991 degrees
+  latitude                  : 18.282880 degrees
+  google maps url           : https://www.google.com/maps/@?api=1&map_action=map&center=59.456991,18.282880&basemap=satellite
+PGN wind data               : 9FD0219 1FD02 130306
+  sender                    : 9
+  SID                       : 255
+  AWS                       : 1.5 m/s
+  AWA                       : 236.0 degrees
+  reference                 : 2
+PGN wind data               : 9FD0220 1FD02 130306
+  sender                    : 9
+  SID                       : 255
+  AWS                       : 1.5 m/s
+  AWA                       : 236.0 degrees
+  reference                 : 2
+PGN position rapid update   : 9F8012B 1F801 129025
+  sender                    : 9
+  longitude                 : 59.456983 degrees
+  latitude                  : 18.282895 degrees
+  google maps url           : https://www.google.com/maps/@?api=1&map_action=map&center=59.456983,18.282895&basemap=satellite
+PGN vessel heading          : 9F11273 1F112 127250
+  sender                    : 9
+  SID                       : 0
+  heading                   : 322.128326
+  deviation                 : 187.741074
+  variation                 : 187.741074
+  reference                 : 1
+PGN rudder                  : 9F10D73 1F10D 127245
+  sender                    : 9
+  instance                  : 255
+  direction_order           : 0
+  angle_order               : -0.005730 degrees
+  position                  : 0.000000 degrees
+PGN seatalk pilot heading : 1CFF4F73 FF4F 65359
+  sender                    : 28
+  manufacurer_code          : 1851
+  industry_code             : 4
+  SID                       : 0
+  heading_true              : 375.487854
+  heading_magnetic          : 322.128326
+PGN unknown : 1DEFFF73 1EFFF 126975
+  sender    : 29
+  data      : E0 16 3B 9F F0 81 9C 31
+PGN unknown : 1DEFFF73 1EFFF 126975
+  sender    : 29
+  data      : E1 1A 0 FA 2E 3 0 F7
+PGN unknown : 1DEFFF73 1EFFF 126975
+  sender    : 29
+  data      : E2 FF FF 0 0 0 0 0
+PGN unknown : 1DEFFF73 1EFFF 126975
+  sender    : 29
+  data      : E3 0 0 FF FF FF FF FF
+PGN unknown : DF80500 1F805 129029
+  sender    : 13
+  data      : 60 2B B4 62 4C D8 F1 44
+PGN unknown : DF80500 1F805 129029
+  sender    : 13
+  data      : 61 28 0 74 44 E9 2D 56
+PGN unknown : DF80500 1F805 129029
+  sender    : 13
+  data      : 62 40 8 0 36 1B F3 D2
+PGN unknown : DF80500 1F805 129029
+  sender    : 13
+  data      : 63 89 89 2 40 17 A2 1
+PGN unknown : DF80500 1F805 129029
+  sender    : 13
+  data      : 64 0 0 0 0 13 FC 10
+PGN unknown : DF80500 1F805 129029
+  sender    : 13
+  data      : 65 45 0 FF 7F FF FF FF
+PGN unknown : DF80500 1F805 129029
+  sender    : 13
+  data      : 66 7F 0 FF FF FF FF FF
+PGN position rapid update   : 9F80100 1F801 129025
+  sender                    : 9
+  longitude                 : 59.456991 degrees
+  latitude                  : 18.282880 degrees
+  google maps url           : https://www.google.com/maps/@?api=1&map_action=map&center=59.456991,18.282880&basemap=satellite
+PGN time date               : DF80900 1F809 129033
+  date                      : 19554
+  time                      : 675607000
+  local_offset              : 120 minutes from UTC
+  date/time                 : Sun Jul 16 20:46:00 2023
+
+PGN temperature extended    : 15FD0C23 1FD0C 130316
+  sender                    : 21
+  SID                       : 255
+  instance                  : 0
+  source                    : 0
+  temperature               : 20.661011 degrees celsius
+  set_temperature           : 6280.350098 degrees celsius
+PGN wind data               : 9FD0219 1FD02 130306
+  sender                    : 9
+  SID                       : 255
+  AWS                       : 1.5 m/s
+  AWA                       : 236.0 degrees
+  reference                 : 2
+PGN wind data               : 9FD0220 1FD02 130306
+  sender                    : 9
+  SID                       : 255
+  AWS                       : 1.5 m/s
+  AWA                       : 236.0 degrees
+  reference                 : 2
+PGN env param               : 15FD0719 1FD07 130311
+  sender                    : 21
+  SID                       : 255
+  temp source               : 1
+  humidity source           : 3
+  temperature               : 20.999994 degrees celsius
+  humidity                  : -0.004000 %
+  atmospheric pressure      : 100900.000000 Pascal
+PGN unknown : 1DEFFF73 1EFFF 126975
+  sender    : 29
+  data      : 0 16 3B 9F F0 81 90 0
+PGN unknown : 1DEFFF73 1EFFF 126975
+  sender    : 29
+  data      : 1 3 0 FA 2E 3 0 F7
+PGN unknown : 1DEFFF73 1EFFF 126975
+  sender    : 29
+  data      : 2 FF FF 0 0 0 0 0
+PGN unknown : 1DEFFF73 1EFFF 126975
+  sender    : 29
+  data      : 3 0 0 FF FF FF FF FF
+PGN position rapid update   : 9F8012B 1F801 129025
+  sender                    : 9
+  longitude                 : 59.456983 degrees
+  latitude                  : 18.282895 degrees
+  google maps url           : https://www.google.com/maps/@?api=1&map_action=map&center=59.456983,18.282895&basemap=satellite
+PGN cogsog rapid update     : 9F8022B 1F802 129026
+  sender                    : 9
+  SID                       : 255
+  cog reference             : 0
+  cog                       : 0.000000 degrees
+  sog                       : 0.010000 m/s
+PGN cogsog rapid update     : 9F80200 1F802 129026
+  sender                    : 9
+  SID                       : 255
+  cog reference             : 0
+  cog                       : 375.487854 degrees
+  sog                       : 655.349976 m/s
+PGN position rapid update   : 9F80100 1F801 129025
+  sender                    : 9
+  longitude                 : 59.456991 degrees
+  latitude                  : 18.282880 degrees
+  google maps url           : https://www.google.com/maps/@?api=1&map_action=map&center=59.456991,18.282880&basemap=satellite
+PGN system time             : DF01000 126992
+  sender                    : 13
+  SID                       : 255
+  source                    : 15
+  date                      : 19554
+  time                      : 67560.695312
+  date/time                 : Sun Jul 16 20:46:00 2023
+
+PGN wind data               : 9FD0219 1FD02 130306
+  sender                    : 9
+  SID                       : 255
+  AWS                       : 1.5 m/s
+  AWA                       : 236.0 degrees
+  reference                 : 2
+PGN wind data               : 9FD0220 1FD02 130306
+  sender                    : 9
+  SID                       : 255
+  AWS                       : 1.5 m/s
+  AWA                       : 236.0 degrees
+  reference                 : 2
+PGN unknown : 11F80F2B 1F80F 129039
+  sender    : 17
+  data      : A0 1B 12 90 6 D7 F 96
+PGN unknown : 11F80F2B 1F80F 129039
+  sender    : 17
+  data      : A1 BF E5 A 69 6A 70 23
+PGN unknown : 11F80F2B 1F80F 129039
+  sender    : 17
+  data      : A2 3 3 88 0 0 6 0
+PGN unknown : 11F80F2B 1F80F 129039
+  sender    : 17
+  data      : A3 26 FF FF 0 74 1 FF
+PGN position rapid update   : 9F80100 1F801 129025
+  sender                    : 9
+  longitude                 : 59.456991 degrees
+  latitude                  : 18.282880 degrees
+  google maps url           : https://www.google.com/maps/@?api=1&map_action=map&center=59.456991,18.282880&basemap=satellite
+PGN position rapid update   : 9F8012B 1F801 129025
+  sender                    : 9
+  longitude                 : 59.456983 degrees
+  latitude                  : 18.282895 degrees
+  google maps url           : https://www.google.com/maps/@?api=1&map_action=map&center=59.456983,18.282895&basemap=satellite
+PGN wind data               : 9FD0219 1FD02 130306
+  sender                    : 9
+  SID                       : 255
+  AWS                       : 1.5 m/s
+  AWA                       : 236.0 degrees
+  reference                 : 2
+PGN env param               : 15FD0723 1FD07 130311
+  sender                    : 21
+  SID                       : 255
+  temp source               : 0
+  humidity source           : 3
+  temperature               : 20.659998 degrees celsius
+  humidity                  : 131.068008 %
+  atmospheric pressure      : 6553500.000000 Pascal
+PGN wind data               : 9FD0220 1FD02 130306
+  sender                    : 9
+  SID                       : 255
+  AWS                       : 1.5 m/s
+  AWA                       : 236.0 degrees
+  reference                 : 2
+PGN cogsog rapid update     : 9F80200 1F802 129026
+  sender                    : 9
+  SID                       : 255
+  cog reference             : 0
+  cog                       : 375.487854 degrees
+  sog                       : 655.349976 m/s
+PGN position rapid update   : 9F8012B 1F801 129025
+  sender                    : 9
+  longitude                 : 59.456983 degrees
+  latitude                  : 18.282893 degrees
+  google maps url           : https://www.google.com/maps/@?api=1&map_action=map&center=59.456983,18.282893&basemap=satellite
+PGN position rapid update   : 9F80100 1F801 129025
+  sender                    : 9
+  longitude                 : 59.456991 degrees
+  latitude                  : 18.282880 degrees
+  google maps url           : https://www.google.com/maps/@?api=1&map_action=map&center=59.456991,18.282880&basemap=satellite
+PGN drift rapid update      : DF90B00 1F90B 129291
+  sender                    : 13
+  SID                       : 255
+  reference                 : 0
+  set                       : 7.414073 degrees
+  drift                     : 0.000000 m/s
+PGN wind data               : 9FD0219 1FD02 130306
+  sender                    : 9
+  SID                       : 255
+  AWS                       : 1.5 m/s
+  AWA                       : 238.0 degrees
+  reference                 : 2
+PGN wind data               : 9FD0220 1FD02 130306
+  sender                    : 9
+  SID                       : 255
+  AWS                       : 1.5 m/s
+  AWA                       : 238.0 degrees
+  reference                 : 2
+PGN cogsog rapid update     : 9F8022B 1F802 129026
+  sender                    : 9
+  SID                       : 255
+  cog reference             : 0
+  cog                       : 0.000000 degrees
+  sog                       : 0.010000 m/s
+PGN position rapid update   : 9F80100 1F801 129025
+  sender                    : 9
+  longitude                 : 59.456991 degrees
+  latitude                  : 18.282880 degrees
+  google maps url           : https://www.google.com/maps/@?api=1&map_action=map&center=59.456991,18.282880&basemap=satellite
+PGN position rapid update   : 9F8012B 1F801 129025
+  sender                    : 9
+  longitude                 : 59.456983 degrees
+  latitude                  : 18.282893 degrees
+  google maps url           : https://www.google.com/maps/@?api=1&map_action=map&center=59.456983,18.282893&basemap=satellite
+PGN wind data               : 9FD0219 1FD02 130306
+  sender                    : 9
+  SID                       : 255
+  AWS                       : 1.5 m/s
+  AWA                       : 238.0 degrees
+  reference                 : 2
+PGN wind data               : 9FD0220 1FD02 130306
+  sender                    : 9
+  SID                       : 255
+  AWS                       : 1.5 m/s
+  AWA                       : 238.0 degrees
+  reference                 : 2
+PGN vessel heading          : 9F11273 1F112 127250
+  sender                    : 9
+  SID                       : 0
+  heading                   : 322.128326
+  deviation                 : 187.741074
+  variation                 : 187.741074
+  reference                 : 1
+PGN rudder                  : 9F10D73 1F10D 127245
+  sender                    : 9
+  instance                  : 255
+  direction_order           : 0
+  angle_order               : -0.005730 degrees
+  position                  : 0.000000 degrees
+PGN seatalk alarm           : 1CFF0873 FF08 65288
+  sender                    : 28
+  manufacurer_code          : 1851
+  industry_code             : 4
+  SID                       : 0
+  alarm_status              : 0
+  alarm_id                  : 20
+  alarm_group               : 0
+  alarm_priority            : 65535
+PGN seatalk pilot heading : 1CFF4F73 FF4F 65359
+  sender                    : 28
+  manufacurer_code          : 1851
+  industry_code             : 4
+  SID                       : 0
+  heading_true              : 375.487854
+  heading_magnetic          : 322.128326
+PGN unknown : 1DEFFF73 1EFFF 126975
+  sender    : 29
+  data      : 20 16 3B 9F F0 81 84 36
+PGN unknown : 1DEFFF73 1EFFF 126975
+  sender    : 29
+  data      : 21 9A 88 40 0 0 2 8
+PGN unknown : 1DEFFF73 1EFFF 126975
+  sender    : 29
+  data      : 22 FF FF 0 0 0 0 0
+PGN unknown : 1DEFFF73 1EFFF 126975
+  sender    : 29
+  data      : 23 0 0 FF FF FF FF FF
+PGN cogsog rapid update     : 9F80200 1F802 129026
+  sender                    : 9
+  SID                       : 255
+  cog reference             : 0
+  cog                       : 375.487854 degrees
+  sog                       : 655.349976 m/s
+PGN unknown : DFE1100 1FE11 130577
+  sender    : 13
+  data      : 60 E C0 B4 FF FF FF FF
+PGN unknown : DFE1100 1FE11 130577
+  sender    : 13
+  data      : 61 FF FF FF FF E 5 1
+PGN unknown : DFE1100 1FE11 130577
+  sender    : 13
+  data      : 62 0 FF FF FF FF FF FF
+PGN position rapid update   : 9F80100 1F801 129025
+  sender                    : 9
+  longitude                 : 59.456991 degrees
+  latitude                  : 18.282880 degrees
+  google maps url           : https://www.google.com/maps/@?api=1&map_action=map&center=59.456991,18.282880&basemap=satellite
+PGN position rapid update   : 9F8012B 1F801 129025
+  sender                    : 9
+  longitude                 : 59.456983 degrees
+  latitude                  : 18.282893 degrees
+  google maps url           : https://www.google.com/maps/@?api=1&map_action=map&center=59.456983,18.282893&basemap=satellite
+PGN wind data               : 9FD0219 1FD02 130306
+  sender                    : 9
+  SID                       : 255
+  AWS                       : 1.5 m/s
+  AWA                       : 238.0 degrees
+  reference                 : 2
+PGN wind data               : 9FD0220 1FD02 130306
+  sender                    : 9
+  SID                       : 255
+  AWS                       : 1.5 m/s
+  AWA                       : 238.0 degrees
+  reference                 : 2
+PGN env param               : 15FD0719 1FD07 130311
+  sender                    : 21
+  SID                       : 255
+  temp source               : 1
+  humidity source           : 3
+  temperature               : 20.999994 degrees celsius
+  humidity                  : -0.004000 %
+  atmospheric pressure      : 100900.000000 Pascal
+PGN crosstrack error        : DF90300 1F903 129283
+  sender                    : 13
+  SID                       : 255
+  xte_mode                  : 15
+  navigation_terminated     : 1
+  xte                       : 21474836.000000 m
+PGN position rapid update   : 9F80100 1F801 129025
+  sender                    : 9
+  longitude                 : 59.456991 degrees
+  latitude                  : 18.282880 degrees
+  google maps url           : https://www.google.com/maps/@?api=1&map_action=map&center=59.456991,18.282880&basemap=satellite
+PGN position rapid update   : 9F8012B 1F801 129025
+  sender                    : 9
+  longitude                 : 59.456983 degrees
+  latitude                  : 18.282893 degrees
+  google maps url           : https://www.google.com/maps/@?api=1&map_action=map&center=59.456983,18.282893&basemap=satellite
+PGN cogsog rapid update     : 9F8022B 1F802 129026
+  sender                    : 9
+  SID                       : 255
+  cog reference             : 0
+  cog                       : 0.000000 degrees
+  sog                       : 0.010000 m/s
+PGN wind data               : 9FD0219 1FD02 130306
+  sender                    : 9
+  SID                       : 255
+  AWS                       : 1.5 m/s
+  AWA                       : 238.0 degrees
+  reference                 : 2
+PGN wind data               : 9FD0220 1FD02 130306
+  sender                    : 9
+  SID                       : 255
+  AWS                       : 1.5 m/s
+  AWA                       : 238.0 degrees
+  reference                 : 2
+PGN cogsog rapid update     : 9F80200 1F802 129026
+  sender                    : 9
+  SID                       : 255
+  cog reference             : 0
+  cog                       : 375.487854 degrees
+  sog                       : 655.349976 m/s
+PGN position rapid update   : 9F80100 1F801 129025
+  sender                    : 9
+  longitude                 : 59.456991 degrees
+  latitude                  : 18.282880 degrees
+  google maps url           : https://www.google.com/maps/@?api=1&map_action=map&center=59.456991,18.282880&basemap=satellite
+PGN unknown : 19FA0300 1FA03 129539
+  sender    : 25
+  data      : 0 DB 45 0 5A 0 39 0
+PGN unknown : 19FA0600 1FA06 129542
+  sender    : 25
+  data      : 80 F B5 50 0 FF FF FF
+PGN unknown : 19FA0600 1FA06 129542
+  sender    : 25
+  data      : 81 FF FF FF FF FF FF FF
+PGN unknown : 19FA0600 1FA06 129542
+  sender    : 25
+  data      : 82 FF FF FF FF FF FF FF
+PGN unknown : 19FA0B00 1FA0B 129547
+  sender    : 25
+  data      : 80 F B5 34 2 42 0 2C
+PGN unknown : 19FA0B00 1FA0B 129547
+  sender    : 25
+  data      : 81 0 1C 11 3E 0 31 0
+PGN unknown : 19FA0B00 1FA0B 129547
+  sender    : 25
+  data      : 82 60 0 FF FF FF FF FF
+PGN position rapid update   : 9F8012B 1F801 129025
+  sender                    : 9
+  longitude                 : 59.456983 degrees
+  latitude                  : 18.282893 degrees
+  google maps url           : https://www.google.com/maps/@?api=1&map_action=map&center=59.456983,18.282893&basemap=satellite
+PGN water depth             : DF50B23 1F50B 128267
+  sender                    : 13
+  SID                       : 255
+  depth                     : 3.26 m
+  offset                    : 0.0000 m
+  range                     : 255
+PGN speed                   : 9F50323 1F503 128259
+  sender                    : 9
+  SID                       : 255
+  speed ref water           : 0.000000 m/s
+  speed ref ground          : 655.349976 m/s
+  speed ref water type      : 0
+  speed direction           : 15
+PGN unknown : 19F51323 1F513 128275
+  sender    : 25
+  data      : 20 E FF FF FF FF FF FF
+PGN env param               : 15FD0723 1FD07 130311
+  sender                    : 21
+  SID                       : 255
+  temp source               : 0
+  humidity source           : 3
+  temperature               : 20.649988 degrees celsius
+  humidity                  : 131.068008 %
+  atmospheric pressure      : 6553500.000000 Pascal
+PGN unknown : 19F51323 1F513 128275
+  sender    : 25
+  data      : 21 59 F5 3A 0 59 F5 3A
+PGN unknown : 19F51323 1F513 128275
+  sender    : 25
+  data      : 22 0 FF FF FF FF FF FF
+PGN wind data               : 9FD0219 1FD02 130306
+  sender                    : 9
+  SID                       : 255
+  AWS                       : 1.5 m/s
+  AWA                       : 238.0 degrees
+  reference                 : 2
+PGN wind data               : 9FD0220 1FD02 130306
+  sender                    : 9
+  SID                       : 255
+  AWS                       : 1.5 m/s
+  AWA                       : 238.0 degrees
+  reference                 : 2
+PGN unknown : 19FA0400 1FA04 129540
+  sender    : 25
+  data      : 80 DB B5 FF 12 4 C6 4
+PGN unknown : 19FA0400 1FA04 129540
+  sender    : 25
+  data      : 81 2D 44 28 A 0 0 0
+PGN unknown : 19FA0400 1FA04 129540
+  sender    : 25
+  data      : 82 0 F2 5 A2 1C 7C CA
+PGN unknown : 19FA0400 1FA04 129540
+  sender    : 25
+  data      : 83 74 E 0 0 0 0 F2
+PGN unknown : 19FA0400 1FA04 129540
+  sender    : 25
+  data      : 84 7 16 31 D0 51 B8 B
+PGN unknown : 19FA0400 1FA04 129540
+  sender    : 25
+  data      : 85 0 0 0 0 F2 9 DD
+PGN unknown : 19FA0400 1FA04 129540
+  sender    : 25
+  data      : 86 17 44 48 E4 C 0 0
+PGN unknown : 19FA0400 1FA04 129540
+  sender    : 25
+  data      : 87 0 0 F2 B 46 C 43
+PGN unknown : 19FA0400 1FA04 129540
+  sender    : 25
+  data      : 88 A2 74 E 0 0 0 0
+PGN unknown : 19FA0400 1FA04 129540
+  sender    : 25
+  data      : 89 F2 10 E9 A 74 14 54
+PGN unknown : 19FA0400 1FA04 129540
+  sender    : 25
+  data      : 8A B 0 0 0 0 F1 14
+PGN unknown : 19FA0400 1FA04 129540
+  sender    : 25
+  data      : 8B 2E 26 DA AD D8 E 0
+PGN unknown : 19FA0400 1FA04 129540
+  sender    : 25
+  data      : 8C 0 0 0 F2 1B 74 5
+PGN unknown : 19FA0400 1FA04 129540
+  sender    : 25
+  data      : 8D 2E 26 28 A 0 0 0
+PGN unknown : 19FA0400 1FA04 129540
+  sender    : 25
+  data      : 8E 0 F2 1E 39 28 FE 86
+PGN unknown : 19FA0400 1FA04 129540
+  sender    : 25
+  data      : 8F AC D 0 0 0 0 F2
+PGN unknown : 19FA0400 1FA04 129540
+  sender    : 25
+  data      : 90 41 97 1A E5 CD 80 C
+PGN unknown : 19FA0400 1FA04 129540
+  sender    : 25
+  data      : 91 0 0 0 0 F2 47 74
+PGN unknown : 19FA0400 1FA04 129540
+  sender    : 25
+  data      : 92 14 7E 52 AC D 0 0
+PGN unknown : 19FA0400 1FA04 129540
+  sender    : 25
+  data      : 93 0 0 F2 48 96 38 67
+PGN unknown : 19FA0400 1FA04 129540
+  sender    : 25
+  data      : 94 4E F0 A 0 0 0 0
+PGN unknown : 19FA0400 1FA04 129540
+  sender    : 25
+  data      : 95 F2 49 17 22 7F 25 28
+PGN unknown : 19FA0400 1FA04 129540
+  sender    : 25
+  data      : 96 A 0 0 0 0 F2 4A
+PGN unknown : 19FA0400 1FA04 129540
+  sender    : 25
+  data      : 97 39 28 38 64 C4 9 0
+PGN unknown : 19FA0400 1FA04 129540
+  sender    : 25
+  data      : 98 0 0 0 F2 4B 8B 9
+PGN unknown : 19FA0400 1FA04 129540
+  sender    : 25
+  data      : 99 2C 80 80 C 0 0 0
+PGN unknown : 19FA0400 1FA04 129540
+  sender    : 25
+  data      : 9A 0 F2 51 B 11 1F E7
+PGN unknown : 19FA0400 1FA04 129540
+  sender    : 25
+  data      : 9B 8C A 0 0 0 0 F2
+PGN position rapid update   : 9F8012B 1F801 129025
+  sender                    : 9
+  longitude                 : 59.456983 degrees
+  latitude                  : 18.282893 degrees
+  google maps url           : https://www.google.com/maps/@?api=1&map_action=map&center=59.456983,18.282893&basemap=satellite
+PGN unknown : 19FA0400 1FA04 129540
+  sender    : 25
+  data      : 9C 58 46 C F1 C0 74 E
+PGN unknown : 19FA0400 1FA04 129540
+  sender    : 25
+  data      : 9D 0 0 0 0 F2 31 0
+PGN unknown : 19FA0400 1FA04 129540
+  sender    : 25
+  data      : 9E F F2 84 80 C 0 0
+PGN unknown : 19FA0400 1FA04 129540
+  sender    : 25
+  data      : 9F 0 0 F1 FF FF FF FF
+PGN position rapid update   : 9F80100 1F801 129025
+  sender                    : 9
+  longitude                 : 59.456991 degrees
+  latitude                  : 18.282880 degrees
+  google maps url           : https://www.google.com/maps/@?api=1&map_action=map&center=59.456991,18.282880&basemap=satellite
+PGN magnetic variation      : 19F11A00 1F11A 127258
+  sender                    : 25
+  SID                       : 255
+  source                    : 15
+  age_of_service            : 65535
+  variation                 : 7.414073
+PGN wind data               : 9FD0219 1FD02 130306
+  sender                    : 9
+  SID                       : 255
+  AWS                       : 1.6 m/s
+  AWA                       : 240.0 degrees
+  reference                 : 2
+PGN wind data               : 9FD0220 1FD02 130306
+  sender                    : 9
+  SID                       : 255
+  AWS                       : 1.6 m/s
+  AWA                       : 240.0 degrees
+  reference                 : 2
+PGN cogsog rapid update     : 9F8022B 1F802 129026
+  sender                    : 9
+  SID                       : 255
+  cog reference             : 0
+  cog                       : 0.000000 degrees
+  sog                       : 0.010000 m/s
+PGN cogsog rapid update     : 9F80200 1F802 129026
+  sender                    : 9
+  SID                       : 255
+  cog reference             : 0
+  cog                       : 375.487854 degrees
+  sog                       : 655.349976 m/s
+PGN position rapid update   : 9F80100 1F801 129025
+  sender                    : 9
+  longitude                 : 59.456991 degrees
+  latitude                  : 18.282880 degrees
+  google maps url           : https://www.google.com/maps/@?api=1&map_action=map&center=59.456991,18.282880&basemap=satellite
+PGN position rapid update   : 9F8012B 1F801 129025
+  sender                    : 9
+  longitude                 : 59.456983 degrees
+  latitude                  : 18.282893 degrees
+  google maps url           : https://www.google.com/maps/@?api=1&map_action=map&center=59.456983,18.282893&basemap=satellite
+PGN wind data               : 9FD0219 1FD02 130306
+  sender                    : 9
+  SID                       : 255
+  AWS                       : 1.6 m/s
+  AWA                       : 240.0 degrees
+  reference                 : 2
+PGN wind data               : 9FD0220 1FD02 130306
+  sender                    : 9
+  SID                       : 255
+  AWS                       : 1.6 m/s
+  AWA                       : 240.0 degrees
+  reference                 : 2
+PGN unknown : DF80500 1F805 129029
+  sender    : 13
+  data      : 80 2B B5 62 4C 48 18 45
+PGN unknown : DF80500 1F805 129029
+  sender    : 13
+  data      : 81 28 0 3E DF 24 2E 56
+PGN unknown : DF80500 1F805 129029
+  sender    : 13
+  data      : 82 40 8 0 36 1B F3 D2
+PGN unknown : DF80500 1F805 129029
+  sender    : 13
+  data      : 83 89 89 2 E0 9D A3 1
+PGN unknown : DF80500 1F805 129029
+  sender    : 13
+  data      : 84 0 0 0 0 13 FC 10
+PGN unknown : DF80500 1F805 129029
+  sender    : 13
+  data      : 85 45 0 FF 7F FF FF FF
+PGN unknown : DF80500 1F805 129029
+  sender    : 13
+  data      : 86 7F 0 FF FF FF FF FF
+PGN position rapid update   : 9F80100 1F801 129025
+  sender                    : 9
+  longitude                 : 59.456991 degrees
+  latitude                  : 18.282880 degrees
+  google maps url           : https://www.google.com/maps/@?api=1&map_action=map&center=59.456991,18.282880&basemap=satellite
+PGN time date               : DF80900 1F809 129033
+  date                      : 19554
+  time                      : 675616840
+  local_offset              : 120 minutes from UTC
+  date/time                 : Sun Jul 16 20:46:01 2023
+
+PGN vessel heading          : 9F11273 1F112 127250
+  sender                    : 9
+  SID                       : 0
+  heading                   : 322.128326
+  deviation                 : 187.741074
+  variation                 : 187.741074
+  reference                 : 1
+PGN rudder                  : 9F10D73 1F10D 127245
+  sender                    : 9
+  instance                  : 255
+  direction_order           : 0
+  angle_order               : -0.005730 degrees
+  position                  : 0.000000 degrees
+PGN seatalk pilot heading : 1CFF4F73 FF4F 65359
+  sender                    : 28
+  manufacurer_code          : 1851
+  industry_code             : 4
+  SID                       : 0
+  heading_true              : 375.487854
+  heading_magnetic          : 322.128326
+PGN unknown : 1DEFFF73 1EFFF 126975
+  sender    : 29
+  data      : 40 16 3B 9F F0 81 9C 31
+PGN unknown : 1DEFFF73 1EFFF 126975
+  sender    : 29
+  data      : 41 1A 0 E 5 7 0 F7
+PGN unknown : 1DEFFF73 1EFFF 126975
+  sender    : 29
+  data      : 42 FF FF 0 0 0 0 0
+PGN unknown : 1DEFFF73 1EFFF 126975
+  sender    : 29
+  data      : 43 0 0 FF FF FF FF FF
+PGN position rapid update   : 9F8012B 1F801 129025
+  sender                    : 9
+  longitude                 : 59.456983 degrees
+  latitude                  : 18.282893 degrees
+  google maps url           : https://www.google.com/maps/@?api=1&map_action=map&center=59.456983,18.282893&basemap=satellite
+PGN wind data               : 9FD0219 1FD02 130306
+  sender                    : 9
+  SID                       : 255
+  AWS                       : 1.6 m/s
+  AWA                       : 240.0 degrees
+  reference                 : 2
+PGN wind data               : 9FD0220 1FD02 130306
+  sender                    : 9
+  SID                       : 255
+  AWS                       : 1.6 m/s
+  AWA                       : 240.0 degrees
+  reference                 : 2
+PGN env param               : 15FD0719 1FD07 130311
+  sender                    : 21
+  SID                       : 255
+  temp source               : 1
+  humidity source           : 3
+  temperature               : 20.999994 degrees celsius
+  humidity                  : -0.004000 %
+  atmospheric pressure      : 100900.000000 Pascal
+PGN cogsog rapid update     : 9F80200 1F802 129026
+  sender                    : 9
+  SID                       : 255
+  cog reference             : 0
+  cog                       : 375.487854 degrees
+  sog                       : 655.349976 m/s
+PGN position rapid update   : 9F80100 1F801 129025
+  sender                    : 9
+  longitude                 : 59.456991 degrees
+  latitude                  : 18.282880 degrees
+  google maps url           : https://www.google.com/maps/@?api=1&map_action=map&center=59.456991,18.282880&basemap=satellite
+PGN system time             : DF01000 126992
+  sender                    : 13
+  SID                       : 255
+  source                    : 15
+  date                      : 19554
+  time                      : 67561.796875
+  date/time                 : Sun Jul 16 20:46:01 2023
+
+PGN position rapid update   : 9F8012B 1F801 129025
+  sender                    : 9
+  longitude                 : 59.456983 degrees
+  latitude                  : 18.282893 degrees
+  google maps url           : https://www.google.com/maps/@?api=1&map_action=map&center=59.456983,18.282893&basemap=satellite
+PGN cogsog rapid update     : 9F8022B 1F802 129026
+  sender                    : 9
+  SID                       : 255
+  cog reference             : 0
+  cog                       : 0.000000 degrees
+  sog                       : 0.010000 m/s
+PGN wind data               : 9FD0219 1FD02 130306
+  sender                    : 9
+  SID                       : 255
+  AWS                       : 1.6 m/s
+  AWA                       : 240.0 degrees
+  reference                 : 2
+PGN wind data               : 9FD0220 1FD02 130306
+  sender                    : 9
+  SID                       : 255
+  AWS                       : 1.6 m/s
+  AWA                       : 240.0 degrees
+  reference                 : 2
+PGN position rapid update   : 9F80100 1F801 129025
+  sender                    : 9
+  longitude                 : 59.456991 degrees
+  latitude                  : 18.282880 degrees
+  google maps url           : https://www.google.com/maps/@?api=1&map_action=map&center=59.456991,18.282880&basemap=satellite
+PGN position rapid update   : 9F8012B 1F801 129025
+  sender                    : 9
+  longitude                 : 59.456983 degrees
+  latitude                  : 18.282892 degrees
+  google maps url           : https://www.google.com/maps/@?api=1&map_action=map&center=59.456983,18.282892&basemap=satellite
+PGN env param               : 15FD0723 1FD07 130311
+  sender                    : 21
+  SID                       : 255
+  temp source               : 0
+  humidity source           : 3
+  temperature               : 20.649988 degrees celsius
+  humidity                  : 131.068008 %
+  atmospheric pressure      : 6553500.000000 Pascal
+PGN wind data               : 9FD0219 1FD02 130306
+  sender                    : 9
+  SID                       : 255
+  AWS                       : 1.6 m/s
+  AWA                       : 240.0 degrees
+  reference                 : 2
+PGN wind data               : 9FD0220 1FD02 130306
+  sender                    : 9
+  SID                       : 255
+  AWS                       : 1.6 m/s
+  AWA                       : 240.0 degrees
+  reference                 : 2
+PGN cogsog rapid update     : 9F80200 1F802 129026
+  sender                    : 9
+  SID                       : 255
+  cog reference             : 0
+  cog                       : 375.487854 degrees
+  sog                       : 655.349976 m/s
+PGN position rapid update   : 9F80100 1F801 129025
+  sender                    : 9
+  longitude                 : 59.456991 degrees
+  latitude                  : 18.282880 degrees
+  google maps url           : https://www.google.com/maps/@?api=1&map_action=map&center=59.456991,18.282880&basemap=satellite
+PGN drift rapid update      : DF90B00 1F90B 129291
+  sender                    : 13
+  SID                       : 255
+  reference                 : 0
+  set                       : 7.414073 degrees
+  drift                     : 0.010000 m/s
+PGN unknown : 19F81400 1F814 129044
+  sender    : 25
+  data      : 80 14 57 38 34 0 0 0
+PGN unknown : 19F81400 1F814 129044
+  sender    : 25
+  data      : 81 0 0 0 0 0 0 0
+PGN unknown : 19F81400 1F814 129044
+  sender    : 25
+  data      : 82 0 0 0 57 38 34 0
+PGN position rapid update   : 9F8012B 1F801 129025
+  sender                    : 9
+  longitude                 : 59.456983 degrees
+  latitude                  : 18.282892 degrees
+  google maps url           : https://www.google.com/maps/@?api=1&map_action=map&center=59.456983,18.282892&basemap=satellite
+PGN wind data               : 9FD0219 1FD02 130306
+  sender                    : 9
+  SID                       : 255
+  AWS                       : 1.6 m/s
+  AWA                       : 240.0 degrees
+  reference                 : 2
+PGN wind data               : 9FD0220 1FD02 130306
+  sender                    : 9
+  SID                       : 255
+  AWS                       : 1.6 m/s
+  AWA                       : 240.0 degrees
+  reference                 : 2
+PGN cogsog rapid update     : 9F8022B 1F802 129026
+  sender                    : 9
+  SID                       : 255
+  cog reference             : 0
+  cog                       : 0.000000 degrees
+  sog                       : 0.010000 m/s
+PGN position rapid update   : 9F80100 1F801 129025
+  sender                    : 9
+  longitude                 : 59.456991 degrees
+  latitude                  : 18.282880 degrees
+  google maps url           : https://www.google.com/maps/@?api=1&map_action=map&center=59.456991,18.282880&basemap=satellite
+PGN position rapid update   : 9F8012B 1F801 129025
+  sender                    : 9
+  longitude                 : 59.456983 degrees
+  latitude                  : 18.282892 degrees
+  google maps url           : https://www.google.com/maps/@?api=1&map_action=map&center=59.456983,18.282892&basemap=satellite
+PGN wind data               : 9FD0219 1FD02 130306
+  sender                    : 9
+  SID                       : 255
+  AWS                       : 1.7 m/s
+  AWA                       : 245.0 degrees
+  reference                 : 2
+PGN wind data               : 9FD0220 1FD02 130306
+  sender                    : 9
+  SID                       : 255
+  AWS                       : 1.7 m/s
+  AWA                       : 245.0 degrees
+  reference                 : 2
+PGN unknown : 15FD0A20 1FD0A 130314
+  sender    : 21
+  data      : FF 0 0 85 64 F 0 FF
+PGN temperature             : 15FD0820 1FD08 130312
+  sender                    : 21
+  SID                       : 255
+  instance                  : 0
+  source                    : 1
+  temperature               : 20.999994 degrees celsius
+  set_temperature           : 382.199976 degrees celsius
+PGN temperature extended    : 15FD0C20 1FD0C 130316
+  sender                    : 21
+  SID                       : 62
+  instance                  : 148
+  source                    : 255
+  temperature               : 6081.026367 degrees celsius
+  set_temperature           : -273.149994 degrees celsius
+PGN temperature             : 15FD0819 1FD08 130312
+  sender                    : 21
+  SID                       : 255
+  instance                  : 0
+  source                    : 1
+  temperature               : 20.999994 degrees celsius
+  set_temperature           : 382.199976 degrees celsius
+PGN cogsog rapid update     : 9F80200 1F802 129026
+  sender                    : 9
+  SID                       : 255
+  cog reference             : 0
+  cog                       : 375.487854 degrees
+  sog                       : 655.349976 m/s
+PGN vessel heading          : 9F11273 1F112 127250
+  sender                    : 9
+  SID                       : 0
+  heading                   : 322.128326
+  deviation                 : 187.741074
+  variation                 : 187.741074
+  reference                 : 1
+PGN unknown : DFE1100 1FE11 130577
+  sender    : 13
+  data      : 80 E C0 B5 FF FF FF FF
+PGN rudder                  : 9F10D73 1F10D 127245
+  sender                    : 9
+  instance                  : 255
+  direction_order           : 0
+  angle_order               : -0.005730 degrees
+  position                  : 0.000000 degrees
+PGN unknown : DFE1100 1FE11 130577
+  sender    : 13
+  data      : 81 FF FF FF FF E 5 1
+PGN seatalk alarm           : 1CFF0873 FF08 65288
+  sender                    : 28
+  manufacurer_code          : 1851
+  industry_code             : 4
+  SID                       : 0
+  alarm_status              : 0
+  alarm_id                  : 20
+  alarm_group               : 0
+  alarm_priority            : 65535
+PGN unknown : DFE1100 1FE11 130577
+  sender    : 13
+  data      : 82 0 FF FF FF FF FF FF
+PGN seatalk pilot heading : 1CFF4F73 FF4F 65359
+  sender                    : 28
+  manufacurer_code          : 1851
+  industry_code             : 4
+  SID                       : 0
+  heading_true              : 375.487854
+  heading_magnetic          : 322.128326
+PGN position rapid update   : 9F80100 1F801 129025
+  sender                    : 9
+  longitude                 : 59.456991 degrees
+  latitude                  : 18.282880 degrees
+  google maps url           : https://www.google.com/maps/@?api=1&map_action=map&center=59.456991,18.282880&basemap=satellite
+PGN unknown : 1DEFFF73 1EFFF 126975
+  sender    : 29
+  data      : 60 16 3B 9F F0 81 84 36
+PGN unknown : 1DEFFF73 1EFFF 126975
+  sender    : 29
+  data      : 61 9A 88 40 0 0 2 8
+PGN unknown : 1DEFFF73 1EFFF 126975
+  sender    : 29
+  data      : 62 FF FF 0 0 0 0 0
+PGN unknown : 1DEFFF73 1EFFF 126975
+  sender    : 29
+  data      : 63 0 0 FF FF FF FF FF
+PGN position rapid update   : 9F8012B 1F801 129025
+  sender                    : 9
+  longitude                 : 59.456983 degrees
+  latitude                  : 18.282892 degrees
+  google maps url           : https://www.google.com/maps/@?api=1&map_action=map&center=59.456983,18.282892&basemap=satellite
+PGN wind data               : 9FD0219 1FD02 130306
+  sender                    : 9
+  SID                       : 255
+  AWS                       : 1.7 m/s
+  AWA                       : 245.0 degrees
+  reference                 : 2
+PGN wind data               : 9FD0220 1FD02 130306
+  sender                    : 9
+  SID                       : 255
+  AWS                       : 1.7 m/s
+  AWA                       : 245.0 degrees
+  reference                 : 2
+PGN env param               : 15FD0719 1FD07 130311
+  sender                    : 21
+  SID                       : 255
+  temp source               : 1
+  humidity source           : 3
+  temperature               : 20.999994 degrees celsius
+  humidity                  : -0.004000 %
+  atmospheric pressure      : 100900.000000 Pascal
+PGN crosstrack error        : DF90300 1F903 129283
+  sender                    : 13
+  SID                       : 255
+  xte_mode                  : 15
+  navigation_terminated     : 1
+  xte                       : 21474836.000000 m
+PGN position rapid update   : 9F80100 1F801 129025
+  sender                    : 9
+  longitude                 : 59.456991 degrees
+  latitude                  : 18.282880 degrees
+  google maps url           : https://www.google.com/maps/@?api=1&map_action=map&center=59.456991,18.282880&basemap=satellite
+PGN position rapid update   : 9F8012B 1F801 129025
+  sender                    : 9
+  longitude                 : 59.456983 degrees
+  latitude                  : 18.282892 degrees
+  google maps url           : https://www.google.com/maps/@?api=1&map_action=map&center=59.456983,18.282892&basemap=satellite
+PGN cogsog rapid update     : 9F8022B 1F802 129026
+  sender                    : 9
+  SID                       : 255
+  cog reference             : 0
+  cog                       : 0.000000 degrees
+  sog                       : 0.010000 m/s
+PGN wind data               : 9FD0219 1FD02 130306
+  sender                    : 9
+  SID                       : 255
+  AWS                       : 1.7 m/s
+  AWA                       : 245.0 degrees
+  reference                 : 2
+PGN wind data               : 9FD0220 1FD02 130306
+  sender                    : 9
+  SID                       : 255
+  AWS                       : 1.7 m/s
+  AWA                       : 245.0 degrees
+  reference                 : 2
+PGN cogsog rapid update     : 9F80200 1F802 129026
+  sender                    : 9
+  SID                       : 255
+  cog reference             : 0
+  cog                       : 375.487854 degrees
+  sog                       : 655.349976 m/s
+PGN position rapid update   : 9F80100 1F801 129025
+  sender                    : 9
+  longitude                 : 59.456991 degrees
+  latitude                  : 18.282880 degrees
+  google maps url           : https://www.google.com/maps/@?api=1&map_action=map&center=59.456991,18.282880&basemap=satellite
+PGN unknown : 19FA0300 1FA03 129539
+  sender    : 25
+  data      : 0 DB 45 0 5A 0 39 0
+PGN unknown : 19FA0600 1FA06 129542
+  sender    : 25
+  data      : A0 F B6 50 0 FF FF FF
+PGN unknown : 19FA0600 1FA06 129542
+  sender    : 25
+  data      : A1 FF FF FF FF FF FF FF
+PGN unknown : 19FA0600 1FA06 129542
+  sender    : 25
+  data      : A2 FF FF FF FF FF FF FF
+PGN unknown : 19FA0B00 1FA0B 129547
+  sender    : 25
+  data      : A0 F B6 68 2 42 0 2C
+PGN unknown : 19FA0B00 1FA0B 129547
+  sender    : 25
+  data      : A1 0 1C 11 3E 0 31 0
+PGN unknown : 19FA0B00 1FA0B 129547
+  sender    : 25
+  data      : A2 60 0 FF FF FF FF FF
+PGN water depth             : DF50B23 1F50B 128267
+  sender                    : 13
+  SID                       : 255
+  depth                     : 3.20 m
+  offset                    : 0.0000 m
+  range                     : 255
+PGN speed                   : 9F50323 1F503 128259
+  sender                    : 9
+  SID                       : 255
+  speed ref water           : 0.000000 m/s
+  speed ref ground          : 655.349976 m/s
+  speed ref water type      : 0
+  speed direction           : 15
+PGN unknown : 19F51323 1F513 128275
+  sender    : 25
+  data      : 40 E FF FF FF FF FF FF
+PGN env param               : 15FD0723 1FD07 130311
+  sender                    : 21
+  SID                       : 255
+  temp source               : 0
+  humidity source           : 3
+  temperature               : 20.659998 degrees celsius
+  humidity                  : 131.068008 %
+  atmospheric pressure      : 6553500.000000 Pascal
+PGN position rapid update   : 9F8012B 1F801 129025
+  sender                    : 9
+  longitude                 : 59.456983 degrees
+  latitude                  : 18.282892 degrees
+  google maps url           : https://www.google.com/maps/@?api=1&map_action=map&center=59.456983,18.282892&basemap=satellite
+PGN unknown : 19FA0400 1FA04 129540
+  sender    : 25
+  data      : B9 2C 80 1C C 0 0 0
+PGN unknown : 19FA0400 1FA04 129540
+  sender    : 25
+  data      : BA 0 F2 51 B 11 1F E7
+PGN unknown : 19FA0400 1FA04 129540
+  sender    : 25
+  data      : BB F0 A 0 0 0 0 F2
+PGN unknown : 19FA0400 1FA04 129540
+  sender    : 25
+  data      : BC 58 46 C F1 C0 74 E
+PGN unknown : 19FA0400 1FA04 129540
+  sender    : 25
+  data      : BD 0 0 0 0 F2 31 0
+PGN unknown : 19FA0400 1FA04 129540
+  sender    : 25
+  data      : BE F F2 84 80 C 0 0
+PGN unknown : 19FA0400 1FA04 129540
+  sender    : 25
+  data      : BF 0 0 F1 FF FF FF FF
+PGN position rapid update   : 9F80100 1F801 129025
+  sender                    : 9
+  longitude                 : 59.456991 degrees
+  latitude                  : 18.282880 degrees
+  google maps url           : https://www.google.com/maps/@?api=1&map_action=map&center=59.456991,18.282880&basemap=satellite
+PGN magnetic variation      : 19F11A00 1F11A 127258
+  sender                    : 25
+  SID                       : 255
+  source                    : 15
+  age_of_service            : 65535
+  variation                 : 7.414073
+PGN unknown : 1CFF1F00 FF1F 65311
+  sender    : 28
+  data      : 3B 9F FF E 5 FF FF FF
+PGN position rapid update   : 9F8012B 1F801 129025
+  sender                    : 9
+  longitude                 : 59.456983 degrees
+  latitude                  : 18.282892 degrees
+  google maps url           : https://www.google.com/maps/@?api=1&map_action=map&center=59.456983,18.282892&basemap=satellite
+PGN wind data               : 9FD0219 1FD02 130306
+  sender                    : 9
+  SID                       : 255
+  AWS                       : 1.7 m/s
+  AWA                       : 245.0 degrees
+  reference                 : 2
+PGN wind data               : 9FD0220 1FD02 130306
+  sender                    : 9
+  SID                       : 255
+  AWS                       : 1.7 m/s
+  AWA                       : 245.0 degrees
+  reference                 : 2
+PGN cogsog rapid update     : 9F8022B 1F802 129026
+  sender                    : 9
+  SID                       : 255
+  cog reference             : 0
+  cog                       : 0.000000 degrees
+  sog                       : 0.010000 m/s
+PGN cogsog rapid update     : 9F80200 1F802 129026
+  sender                    : 9
+  SID                       : 255
+  cog reference             : 0
+  cog                       : 375.487854 degrees
+  sog                       : 655.349976 m/s
+PGN position rapid update   : 9F80100 1F801 129025
+  sender                    : 9
+  longitude                 : 59.456991 degrees
+  latitude                  : 18.282880 degrees
+  google maps url           : https://www.google.com/maps/@?api=1&map_action=map&center=59.456991,18.282880&basemap=satellite
+PGN position rapid update   : 9F8012B 1F801 129025
+  sender                    : 9
+  longitude                 : 59.456983 degrees
+  latitude                  : 18.282892 degrees
+  google maps url           : https://www.google.com/maps/@?api=1&map_action=map&center=59.456983,18.282892&basemap=satellite
+PGN wind data               : 9FD0219 1FD02 130306
+  sender                    : 9
+  SID                       : 255
+  AWS                       : 1.9 m/s
+  AWA                       : 246.0 degrees
+  reference                 : 2
+PGN wind data               : 9FD0220 1FD02 130306
+  sender                    : 9
+  SID                       : 255
+  AWS                       : 1.9 m/s
+  AWA                       : 246.0 degrees
+  reference                 : 2
+PGN vessel heading          : 9F11273 1F112 127250
+  sender                    : 9
+  SID                       : 0
+  heading                   : 322.128326
+  deviation                 : 187.741074
+  variation                 : 187.741074
+  reference                 : 1
+PGN rudder                  : 9F10D73 1F10D 127245
+  sender                    : 9
+  instance                  : 255
+  direction_order           : 0
+  angle_order               : -0.005730 degrees
+  position                  : 0.000000 degrees
+PGN seatalk pilot heading : 1CFF4F73 FF4F 65359
+  sender                    : 28
+  manufacurer_code          : 1851
+  industry_code             : 4
+  SID                       : 0
+  heading_true              : 375.487854
+  heading_magnetic          : 322.128326
+PGN unknown : 1DEFFF73 1EFFF 126975
+  sender    : 29
+  data      : 80 16 3B 9F F0 81 9C 31
+PGN unknown : DF80500 1F805 129029
+  sender    : 13
+  data      : A0 2B B6 62 4C 92 3C 45
+PGN unknown : 1DEFFF73 1EFFF 126975
+  sender    : 29
+  data      : 81 1A 0 E 5 7 0 F7
+PGN unknown : 1DEFFF73 1EFFF 126975
+  sender    : 29
+  data      : 82 FF FF 0 0 0 0 0
+PGN unknown : DF80500 1F805 129029
+  sender    : 13
+  data      : A1 28 0 3E DF 24 2E 56
+PGN unknown : 1DEFFF73 1EFFF 126975
+  sender    : 29
+  data      : 83 0 0 FF FF FF FF FF
+PGN unknown : DF80500 1F805 129029
+  sender    : 13
+  data      : A2 40 8 0 6C 80 B7 D2
+PGN unknown : DF80500 1F805 129029
+  sender    : 13
+  data      : A3 89 89 2 E0 9D A3 1
+PGN unknown : DF80500 1F805 129029
+  sender    : 13
+  data      : A4 0 0 0 0 13 FC 10
+PGN unknown : DF80500 1F805 129029
+  sender    : 13
+  data      : A5 45 0 FF 7F FF FF FF
+PGN unknown : DF80500 1F805 129029
+  sender    : 13
+  data      : A6 7F 0 FF FF FF FF FF
+PGN position rapid update   : 9F80100 1F801 129025
+  sender                    : 9
+  longitude                 : 59.456991 degrees
+  latitude                  : 18.282880 degrees
+  google maps url           : https://www.google.com/maps/@?api=1&map_action=map&center=59.456991,18.282880&basemap=satellite
+PGN time date               : DF80900 1F809 129033
+  date                      : 19554
+  time                      : 675626130
+  local_offset              : 120 minutes from UTC
+  date/time                 : Sun Jul 16 20:46:02 2023
+
+PGN temperature extended    : 15FD0C23 1FD0C 130316
+  sender                    : 21
+  SID                       : 255
+  instance                  : 0
+  source                    : 0
+  temperature               : 20.663025 degrees celsius
+  set_temperature           : 6280.350098 degrees celsius
+PGN position rapid update   : 9F8012B 1F801 129025
+  sender                    : 9
+  longitude                 : 59.456983 degrees
+  latitude                  : 18.282892 degrees
+  google maps url           : https://www.google.com/maps/@?api=1&map_action=map&center=59.456983,18.282892&basemap=satellite
+PGN wind data               : 9FD0219 1FD02 130306
+  sender                    : 9
+  SID                       : 255
+  AWS                       : 1.9 m/s
+  AWA                       : 246.0 degrees
+  reference                 : 2
+PGN wind data               : 9FD0220 1FD02 130306
+  sender                    : 9
+  SID                       : 255
+  AWS                       : 1.9 m/s
+  AWA                       : 246.0 degrees
+  reference                 : 2
+PGN env param               : 15FD0719 1FD07 130311
+  sender                    : 21
+  SID                       : 255
+  temp source               : 1
+  humidity source           : 3
+  temperature               : 20.999994 degrees celsius
+  humidity                  : -0.004000 %
+  atmospheric pressure      : 100900.000000 Pascal
+PGN cogsog rapid update     : 9F80200 1F802 129026
+  sender                    : 9
+  SID                       : 255
+  cog reference             : 0
+  cog                       : 375.487854 degrees
+  sog                       : 655.349976 m/s
+PGN position rapid update   : 9F80100 1F801 129025
+  sender                    : 9
+  longitude                 : 59.456991 degrees
+  latitude                  : 18.282880 degrees
+  google maps url           : https://www.google.com/maps/@?api=1&map_action=map&center=59.456991,18.282880&basemap=satellite
+PGN system time             : DF01000 126992
+  sender                    : 13
+  SID                       : 255
+  source                    : 15
+  date                      : 19554
+  time                      : 67562.796875
+  date/time                 : Sun Jul 16 20:46:02 2023
+
+PGN position rapid update   : 9F8012B 1F801 129025
+  sender                    : 9
+  longitude                 : 59.456983 degrees
+  latitude                  : 18.282892 degrees
+  google maps url           : https://www.google.com/maps/@?api=1&map_action=map&center=59.456983,18.282892&basemap=satellite
+PGN cogsog rapid update     : 9F8022B 1F802 129026
+  sender                    : 9
+  SID                       : 255
+  cog reference             : 0
+  cog                       : 0.000000 degrees
+  sog                       : 0.010000 m/s
+PGN wind data               : 9FD0219 1FD02 130306
+  sender                    : 9
+  SID                       : 255
+  AWS                       : 1.9 m/s
+  AWA                       : 246.0 degrees
+  reference                 : 2
+PGN wind data               : 9FD0220 1FD02 130306
+  sender                    : 9
+  SID                       : 255
+  AWS                       : 1.9 m/s
+  AWA                       : 246.0 degrees
+  reference                 : 2
+PGN unknown : 11F80F2B 1F80F 129039
+  sender    : 17
+  data      : C0 1B 12 90 6 D7 F 75
+PGN unknown : 11F80F2B 1F80F 129039
+  sender    : 17
+  data      : C1 BF E5 A 69 6A 70 23
+PGN unknown : 11F80F2B 1F80F 129039
+  sender    : 17
+  data      : C2 B 3 88 0 0 6 0
+PGN position rapid update   : 9F80100 1F801 129025
+  sender                    : 9
+  longitude                 : 59.456991 degrees
+  latitude                  : 18.282880 degrees
+  google maps url           : https://www.google.com/maps/@?api=1&map_action=map&center=59.456991,18.282880&basemap=satellite
+PGN unknown : 11F80F2B 1F80F 129039
+  sender    : 17
+  data      : C3 26 FF FF 0 74 1 FF
+PGN env param               : 15FD0723 1FD07 130311
+  sender                    : 21
+  SID                       : 255
+  temp source               : 0
+  humidity source           : 3
+  temperature               : 20.659998 degrees celsius
+  humidity                  : 131.068008 %
+  atmospheric pressure      : 6553500.000000 Pascal
+PGN unknown : 1DEFFF73 1EFFF 126975
+  sender    : 29
+  data      : A0 16 3B 9F F0 81 90 0
+PGN unknown : 1DEFFF73 1EFFF 126975
+  sender    : 29
+  data      : A1 3 0 E 5 7 0 F7
+PGN unknown : 1DEFFF73 1EFFF 126975
+  sender    : 29
+  data      : A2 FF FF 0 0 0 0 0
+PGN unknown : 1DEFFF73 1EFFF 126975
+  sender    : 29
+  data      : A3 0 0 FF FF FF FF FF
+PGN wind data               : 9FD0219 1FD02 130306
+  sender                    : 9
+  SID                       : 255
+  AWS                       : 1.9 m/s
+  AWA                       : 246.0 degrees
+  reference                 : 2
+PGN wind data               : 9FD0220 1FD02 130306
+  sender                    : 9
+  SID                       : 255
+  AWS                       : 1.9 m/s
+  AWA                       : 246.0 degrees
+  reference                 : 2
+PGN position rapid update   : 9F8012B 1F801 129025
+  sender                    : 9
+  longitude                 : 59.456982 degrees
+  latitude                  : 18.282890 degrees
+  google maps url           : https://www.google.com/maps/@?api=1&map_action=map&center=59.456982,18.282890&basemap=satellite
+PGN cogsog rapid update     : 9F80200 1F802 129026
+  sender                    : 9
+  SID                       : 255
+  cog reference             : 0
+  cog                       : 375.487854 degrees
+  sog                       : 655.349976 m/s
+PGN position rapid update   : 9F80100 1F801 129025
+  sender                    : 9
+  longitude                 : 59.456991 degrees
+  latitude                  : 18.282880 degrees
+  google maps url           : https://www.google.com/maps/@?api=1&map_action=map&center=59.456991,18.282880&basemap=satellite
+PGN drift rapid update      : DF90B00 1F90B 129291
+  sender                    : 13
+  SID                       : 255
+  reference                 : 0
+  set                       : 7.414073 degrees
+  drift                     : 0.010000 m/s
+PGN wind data               : 9FD0219 1FD02 130306
+  sender                    : 9
+  SID                       : 255
+  AWS                       : 1.9 m/s
+  AWA                       : 246.0 degrees
+  reference                 : 2
+PGN wind data               : 9FD0220 1FD02 130306
+  sender                    : 9
+  SID                       : 255
+  AWS                       : 1.9 m/s
+  AWA                       : 246.0 degrees
+  reference                 : 2
+PGN position rapid update   : 9F8012B 1F801 129025
+  sender                    : 9
+  longitude                 : 59.456982 degrees
+  latitude                  : 18.282890 degrees
+  google maps url           : https://www.google.com/maps/@?api=1&map_action=map&center=59.456982,18.282890&basemap=satellite
+PGN position rapid update   : 9F80100 1F801 129025
+  sender                    : 9
+  longitude                 : 59.456991 degrees
+  latitude                  : 18.282880 degrees
+  google maps url           : https://www.google.com/maps/@?api=1&map_action=map&center=59.456991,18.282880&basemap=satellite
+PGN cogsog rapid update     : 9F8022B 1F802 129026
+  sender                    : 9
+  SID                       : 255
+  cog reference             : 0
+  cog                       : 0.000000 degrees
+  sog                       : 0.010000 m/s
+PGN wind data               : 9FD0219 1FD02 130306
+  sender                    : 9
+  SID                       : 255
+  AWS                       : 1.9 m/s
+  AWA                       : 247.0 degrees
+  reference                 : 2
+PGN wind data               : 9FD0220 1FD02 130306
+  sender                    : 9
+  SID                       : 255
+  AWS                       : 1.9 m/s
+  AWA                       : 247.0 degrees
+  reference                 : 2
+PGN position rapid update   : 9F8012B 1F801 129025
+  sender                    : 9
+  longitude                 : 59.456982 degrees
+  latitude                  : 18.282890 degrees
+  google maps url           : https://www.google.com/maps/@?api=1&map_action=map&center=59.456982,18.282890&basemap=satellite
+PGN cogsog rapid update     : 9F80200 1F802 129026
+  sender                    : 9
+  SID                       : 255
+  cog reference             : 0
+  cog                       : 375.487854 degrees
+  sog                       : 655.349976 m/s
+PGN unknown : DFE1100 1FE11 130577
+  sender    : 13
+  data      : A0 E C0 B6 FF FF FF FF
+PGN unknown : DFE1100 1FE11 130577
+  sender    : 13
+  data      : A1 FF FF FF FF E 5 1
+PGN unknown : DFE1100 1FE11 130577
+  sender    : 13
+  data      : A2 0 FF FF FF FF FF FF
+PGN position rapid update   : 9F80100 1F801 129025
+  sender                    : 9
+  longitude                 : 59.456991 degrees
+  latitude                  : 18.282880 degrees
+  google maps url           : https://www.google.com/maps/@?api=1&map_action=map&center=59.456991,18.282880&basemap=satellite
+PGN vessel heading          : 9F11273 1F112 127250
+  sender                    : 9
+  SID                       : 0
+  heading                   : 322.128326
+  deviation                 : 187.741074
+  variation                 : 187.741074
+  reference                 : 1
+PGN rudder                  : 9F10D73 1F10D 127245
+  sender                    : 9
+  instance                  : 255
+  direction_order           : 0
+  angle_order               : -0.005730 degrees
+  position                  : 0.000000 degrees
+PGN seatalk alarm           : 1CFF0873 FF08 65288
+  sender                    : 28
+  manufacurer_code          : 1851
+  industry_code             : 4
+  SID                       : 0
+  alarm_status              : 0
+  alarm_id                  : 20
+  alarm_group               : 0
+  alarm_priority            : 65535
+PGN seatalk pilot heading : 1CFF4F73 FF4F 65359
+  sender                    : 28
+  manufacurer_code          : 1851
+  industry_code             : 4
+  SID                       : 0
+  heading_true              : 375.487854
+  heading_magnetic          : 322.128326
+PGN unknown : 1DEFFF73 1EFFF 126975
+  sender    : 29
+  data      : C0 16 3B 9F F0 81 84 36
+PGN unknown : 1DEFFF73 1EFFF 126975
+  sender    : 29
+  data      : C1 9A 88 40 0 0 2 8
+PGN unknown : 1DEFFF73 1EFFF 126975
+  sender    : 29
+  data      : C2 FF FF 0 0 0 0 0
+PGN unknown : 1DEFFF73 1EFFF 126975
+  sender    : 29
+  data      : C3 0 0 FF FF FF FF FF
+PGN wind data               : 9FD0219 1FD02 130306
+  sender                    : 9
+  SID                       : 255
+  AWS                       : 1.9 m/s
+  AWA                       : 247.0 degrees
+  reference                 : 2
+PGN wind data               : 9FD0220 1FD02 130306
+  sender                    : 9
+  SID                       : 255
+  AWS                       : 1.9 m/s
+  AWA                       : 247.0 degrees
+  reference                 : 2
+PGN env param               : 15FD0719 1FD07 130311
+  sender                    : 21
+  SID                       : 255
+  temp source               : 1
+  humidity source           : 3
+  temperature               : 20.999994 degrees celsius
+  humidity                  : -0.004000 %
+  atmospheric pressure      : 100900.000000 Pascal
+PGN position rapid update   : 9F8012B 1F801 129025
+  sender                    : 9
+  longitude                 : 59.456982 degrees
+  latitude                  : 18.282890 degrees
+  google maps url           : https://www.google.com/maps/@?api=1&map_action=map&center=59.456982,18.282890&basemap=satellite
+PGN crosstrack error        : DF90300 1F903 129283
+  sender                    : 13
+  SID                       : 255
+  xte_mode                  : 15
+  navigation_terminated     : 1
+  xte                       : 21474836.000000 m
+PGN position rapid update   : 9F80100 1F801 129025
+  sender                    : 9
+  longitude                 : 59.456991 degrees
+  latitude                  : 18.282880 degrees
+  google maps url           : https://www.google.com/maps/@?api=1&map_action=map&center=59.456991,18.282880&basemap=satellite
+PGN wind data               : 9FD0219 1FD02 130306
+  sender                    : 9
+  SID                       : 255
+  AWS                       : 1.9 m/s
+  AWA                       : 247.0 degrees
+  reference                 : 2
+PGN wind data               : 9FD0220 1FD02 130306
+  sender                    : 9
+  SID                       : 255
+  AWS                       : 1.9 m/s
+  AWA                       : 247.0 degrees
+  reference                 : 2
+PGN position rapid update   : 9F8012B 1F801 129025
+  sender                    : 9
+  longitude                 : 59.456982 degrees
+  latitude                  : 18.282890 degrees
+  google maps url           : https://www.google.com/maps/@?api=1&map_action=map&center=59.456982,18.282890&basemap=satellite
+PGN cogsog rapid update     : 9F8022B 1F802 129026
+  sender                    : 9
+  SID                       : 255
+  cog reference             : 0
+  cog                       : 0.000000 degrees
+  sog                       : 0.010000 m/s
+PGN cogsog rapid update     : 9F80200 1F802 129026
+  sender                    : 9
+  SID                       : 255
+  cog reference             : 0
+  cog                       : 375.487854 degrees
+  sog                       : 655.349976 m/s
+PGN position rapid update   : 9F80100 1F801 129025
+  sender                    : 9
+  longitude                 : 59.456991 degrees
+  latitude                  : 18.282880 degrees
+  google maps url           : https://www.google.com/maps/@?api=1&map_action=map&center=59.456991,18.282880&basemap=satellite
+PGN unknown : 19FA0300 1FA03 129539
+  sender    : 25
+  data      : 0 DB 45 0 5A 0 39 0
+PGN unknown : 19FA0600 1FA06 129542
+  sender    : 25
+  data      : C0 F B7 4F 0 FF FF FF
+PGN unknown : 19FA0600 1FA06 129542
+  sender    : 25
+  data      : C1 FF FF FF FF FF FF FF
+PGN unknown : 19FA0600 1FA06 129542
+  sender    : 25
+  data      : C2 FF FF FF FF FF FF FF
+PGN unknown : 19FA0B00 1FA0B 129547
+  sender    : 25
+  data      : C0 F B7 60 2 41 0 2B
+PGN unknown : 19FA0B00 1FA0B 129547
+  sender    : 25
+  data      : C1 0 1C 11 3E 0 30 0
+PGN unknown : 19FA0B00 1FA0B 129547
+  sender    : 25
+  data      : C2 5F 0 FF FF FF FF FF
+PGN water depth             : DF50B23 1F50B 128267
+  sender                    : 13
+  SID                       : 255
+  depth                     : 3.13 m
+  offset                    : 0.0000 m
+  range                     : 255
+PGN speed                   : 9F50323 1F503 128259
+  sender                    : 9
+  SID                       : 255
+  speed ref water           : 0.000000 m/s
+  speed ref ground          : 655.349976 m/s
+  speed ref water type      : 0
+  speed direction           : 15
+PGN unknown : 19F51323 1F513 128275
+  sender    : 25
+  data      : 60 E FF FF FF FF FF FF
+PGN env param               : 15FD0723 1FD07 130311
+  sender                    : 21
+  SID                       : 255
+  temp source               : 0
+  humidity source           : 3
+  temperature               : 20.659998 degrees celsius
+  humidity                  : 131.068008 %
+  atmospheric pressure      : 6553500.000000 Pascal
+PGN unknown : 19F51323 1F513 128275
+  sender    : 25
+  data      : 61 59 F5 3A 0 59 F5 3A
+PGN unknown : 19F51323 1F513 128275
+  sender    : 25
+  data      : 62 0 FF FF FF FF FF FF
+PGN wind data               : 9FD0219 1FD02 130306
+  sender                    : 9
+  SID                       : 255
+  AWS                       : 1.9 m/s
+  AWA                       : 247.0 degrees
+  reference                 : 2
+PGN wind data               : 9FD0220 1FD02 130306
+  sender                    : 9
+  SID                       : 255
+  AWS                       : 1.9 m/s
+  AWA                       : 247.0 degrees
+  reference                 : 2
+PGN position rapid update   : 9F8012B 1F801 129025
+  sender                    : 9
+  longitude                 : 59.456982 degrees
+  latitude                  : 18.282890 degrees
+  google maps url           : https://www.google.com/maps/@?api=1&map_action=map&center=59.456982,18.282890&basemap=satellite
+PGN unknown : 19FA0400 1FA04 129540
+  sender    : 25
+  data      : C0 DB B7 FF 12 4 C6 4
+PGN unknown : 19FA0400 1FA04 129540
+  sender    : 25
+  data      : C1 2D 44 8C A 0 0 0
+PGN unknown : 19FA0400 1FA04 129540
+  sender    : 25
+  data      : C2 0 F2 5 A2 1C 7C CA
+PGN unknown : 19FA0400 1FA04 129540
+  sender    : 25
+  data      : C3 D8 E 0 0 0 0 F2
+PGN unknown : 19FA0400 1FA04 129540
+  sender    : 25
+  data      : C4 7 16 31 D0 51 54 B
+PGN unknown : 19FA0400 1FA04 129540
+  sender    : 25
+  data      : C5 0 0 0 0 F2 9 DD
+PGN unknown : 19FA0400 1FA04 129540
+  sender    : 25
+  data      : C6 17 44 48 E4 C 0 0
+PGN unknown : 19FA0400 1FA04 129540
+  sender    : 25
+  data      : C7 0 0 F2 B 46 C 43
+PGN unknown : 19FA0400 1FA04 129540
+  sender    : 25
+  data      : C8 A2 74 E 0 0 0 0
+PGN unknown : 19FA0400 1FA04 129540
+  sender    : 25
+  data      : C9 F2 10 E9 A 74 14 28
+PGN unknown : 19FA0400 1FA04 129540
+  sender    : 25
+  data      : CA A 0 0 0 0 F1 14
+PGN unknown : 19FA0400 1FA04 129540
+  sender    : 25
+  data      : CB 2E 26 DA AD 3C F 0
+PGN unknown : 19FA0400 1FA04 129540
+  sender    : 25
+  data      : CC 0 0 0 F2 1B 74 5
+PGN unknown : 19FA0400 1FA04 129540
+  sender    : 25
+  data      : CD 2E 26 C4 9 0 0 0
+PGN unknown : 19FA0400 1FA04 129540
+  sender    : 25
+  data      : CE 0 F2 1E 39 28 FE 86
+PGN unknown : 19FA0400 1FA04 129540
+  sender    : 25
+  data      : CF E4 C 0 0 0 0 F2
+PGN unknown : 19FA0400 1FA04 129540
+  sender    : 25
+  data      : D0 41 97 1A E5 0 0 0
+PGN unknown : 19FA0400 1FA04 129540
+  sender    : 25
+  data      : D1 0 0 0 0 F2 47 74
+PGN unknown : 19FA0400 1FA04 129540
+  sender    : 25
+  data      : D2 14 7E 52 AC D 0 0
+PGN unknown : 19FA0400 1FA04 129540
+  sender    : 25
+  data      : D3 0 0 F2 48 96 38 67
+PGN unknown : 19FA0400 1FA04 129540
+  sender    : 25
+  data      : D4 4E F0 A 0 0 0 0
+PGN unknown : 19FA0400 1FA04 129540
+  sender    : 25
+  data      : D5 F2 49 17 22 7F 25 28
+PGN unknown : 19FA0400 1FA04 129540
+  sender    : 25
+  data      : D6 A 0 0 0 0 F2 4A
+PGN unknown : 19FA0400 1FA04 129540
+  sender    : 25
+  data      : D7 39 28 38 64 28 A 0
+PGN unknown : 19FA0400 1FA04 129540
+  sender    : 25
+  data      : D8 0 0 0 F2 4B 8B 9
+PGN unknown : 19FA0400 1FA04 129540
+  sender    : 25
+  data      : D9 2C 80 1C C 0 0 0
+PGN unknown : 19FA0400 1FA04 129540
+  sender    : 25
+  data      : DA 0 F2 51 B 11 1F E7
+PGN unknown : 19FA0400 1FA04 129540
+  sender    : 25
+  data      : DB 54 B 0 0 0 0 F2
+PGN unknown : 19FA0400 1FA04 129540
+  sender    : 25
+  data      : DC 58 46 C F1 C0 74 E
+PGN unknown : 19FA0400 1FA04 129540
+  sender    : 25
+  data      : DD 0 0 0 0 F2 31 0
+PGN unknown : 19FA0400 1FA04 129540
+  sender    : 25
+  data      : DE F F2 84 80 C 0 0
+PGN unknown : 19FA0400 1FA04 129540
+  sender    : 25
+  data      : DF 0 0 F1 FF FF FF FF
+PGN position rapid update   : 9F80100 1F801 129025
+  sender                    : 9
+  longitude                 : 59.456991 degrees
+  latitude                  : 18.282880 degrees
+  google maps url           : https://www.google.com/maps/@?api=1&map_action=map&center=59.456991,18.282880&basemap=satellite
+PGN unknown : F 0 0
+  sender    : 0
+  data      : 0 0 0 0 F 20 46 3
+PGN magnetic variation      : 19F11A00 1F11A 127258
+  sender                    : 25
+  SID                       : 255
+  source                    : 15
+  age_of_service            : 65535
+  variation                 : 7.414073
+PGN wind data               : 9FD0219 1FD02 130306
+  sender                    : 9
+  SID                       : 255
+  AWS                       : 1.9 m/s
+  AWA                       : 247.0 degrees
+  reference                 : 2
+PGN wind data               : 9FD0220 1FD02 130306
+  sender                    : 9
+  SID                       : 255
+  AWS                       : 1.9 m/s
+  AWA                       : 247.0 degrees
+  reference                 : 2
+PGN position rapid update   : 9F8012B 1F801 129025
+  sender                    : 9
+  longitude                 : 59.456982 degrees
+  latitude                  : 18.282890 degrees
+  google maps url           : https://www.google.com/maps/@?api=1&map_action=map&center=59.456982,18.282890&basemap=satellite
+PGN cogsog rapid update     : 9F80200 1F802 129026
+  sender                    : 9
+  SID                       : 255
+  cog reference             : 0
+  cog                       : 375.487854 degrees
+  sog                       : 655.349976 m/s
+PGN position rapid update   : 9F80100 1F801 129025
+  sender                    : 9
+  longitude                 : 59.456991 degrees
+  latitude                  : 18.282880 degrees
+  google maps url           : https://www.google.com/maps/@?api=1&map_action=map&center=59.456991,18.282880&basemap=satellite
+PGN cogsog rapid update     : 9F8022B 1F802 129026
+  sender                    : 9
+  SID                       : 255
+  cog reference             : 0
+  cog                       : 0.000000 degrees
+  sog                       : 0.010000 m/s
+PGN wind data               : 9FD0219 1FD02 130306
+  sender                    : 9
+  SID                       : 255
+  AWS                       : 1.9 m/s
+  AWA                       : 247.0 degrees
+  reference                 : 2
+PGN wind data               : 9FD0220 1FD02 130306
+  sender                    : 9
+  SID                       : 255
+  AWS                       : 1.9 m/s
+  AWA                       : 247.0 degrees
+  reference                 : 2
+PGN position rapid update   : 9F8012B 1F801 129025
+  sender                    : 9
+  longitude                 : 59.456982 degrees
+  latitude                  : 18.282890 degrees
+  google maps url           : https://www.google.com/maps/@?api=1&map_action=map&center=59.456982,18.282890&basemap=satellite
+PGN unknown : DF80500 1F805 129029
+  sender    : 13
+  data      : C0 2B B7 62 4C 90 66 45
+PGN unknown : DF80500 1F805 129029
+  sender    : 13
+  data      : C1 28 0 3E DF 24 2E 56
+PGN unknown : DF80500 1F805 129029
+  sender    : 13
+  data      : C2 40 8 0 D8 4A 40 D2
+PGN unknown : DF80500 1F805 129029
+  sender    : 13
+  data      : C3 89 89 2 E0 9D A3 1
+PGN unknown : DF80500 1F805 129029
+  sender    : 13
+  data      : C4 0 0 0 0 13 FC 10
+PGN unknown : DF80500 1F805 129029
+  sender    : 13
+  data      : C5 45 0 FF 7F FF FF FF
+PGN unknown : DF80500 1F805 129029
+  sender    : 13
+  data      : C6 7F 0 FF FF FF FF FF
+PGN position rapid update   : 9F80100 1F801 129025
+  sender                    : 9
+  longitude                 : 59.456991 degrees
+  latitude                  : 18.282880 degrees
+  google maps url           : https://www.google.com/maps/@?api=1&map_action=map&center=59.456991,18.282880&basemap=satellite
+PGN time date               : DF80900 1F809 129033
+  date                      : 19554
+  time                      : 675636880
+  local_offset              : 120 minutes from UTC
+  date/time                 : Sun Jul 16 20:46:03 2023
+
+PGN vessel heading          : 9F11273 1F112 127250
+  sender                    : 9
+  SID                       : 0
+  heading                   : 322.128326
+  deviation                 : 187.741074
+  variation                 : 187.741074
+  reference                 : 1
+PGN rudder                  : 9F10D73 1F10D 127245
+  sender                    : 9
+  instance                  : 255
+  direction_order           : 0
+  angle_order               : -0.005730 degrees
+  position                  : 0.000000 d
