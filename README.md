@@ -6,10 +6,6 @@ It's beeing developed a rainy day onboard a Jeanneau SO37.1 with mostly Raymarin
 
 Connection to NMEA2000 bus (or really Raymarine STNG bus, same signals but different contacts...)
 is made via YDWG-02 https://www.yachtd.com/products/wifi_gateway.html
-Although it states "data protocol RAW" it is not a true gateway as it is filtering messages away
-(like address negotiation etc so I've currently not been able to figure out the bus arbitration part).
-Need to change to a pure CAN interface, possibly using socketcan to get to all details of the bus.
-Should be simple to implement that part, just need the HW for it :)
 
 ## library
 source is in include and src, currently not integrated as shared lib... still on todo list :)
