@@ -10,7 +10,7 @@ SRCS += src/ydwg-02.c
 INCS += include/PGNS/127250_vessel_heading.h
 
 CFLAGS += -Iinclude -g
-LIBS += -lcurses -lpthread
+LIBS += -lm -lcurses -lpthread
 
 all: $(APPS) build/nmea2000-data-viewer
 

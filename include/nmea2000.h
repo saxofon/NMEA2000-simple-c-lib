@@ -9,7 +9,19 @@
 #include <stdint.h>
 #include <math.h>
 
-struct PNG_s {
+#define RAD2DEG(x) ((float)(x)*(180.0f/(float)(M_PI)))
+
+#define NMEA2000_ADDR_GLOBAL  0xFF
+#define NMEA2000_ADDR_UNKNOWN 0xFE
+
+struct nmea2000_stats_s {
+	uint32_t msgs;
+	uint32_t errors;
+};
+
+extern struct nmea2000_stats_s nmea2000_stats;
+
+struct nmea2000_msg_s {
 	union {
 		uint32_t i;
 		struct __attribute__((packed)) {
@@ -22,6 +34,7 @@ struct PNG_s {
 			unsigned int sa:8;
 		} s;
 	} header;
+	uint32_t dlen;
 	union {
 		uint8_t d[8];
 #include "PGNS/60928_iso_address_claim.h"
@@ -45,9 +58,8 @@ struct PNG_s {
 	} data;
 };
 
-#define RAD2DEG(x) ((float)(x)*(180.0f/(float)(M_PI)))
-
-void pgn_time2tm(unsigned int date, unsigned int time, struct tm *tm);
-void nmea2000_dump_msg(struct PNG_s *pgn);
+void nmea2000_time2tm(unsigned int date, unsigned int time, struct tm *tm);
+void nmea2000_dump_msg(struct nmea2000_msg_s *msg);
+void nmea2000_header2pgn(struct nmea2000_msg_s *msg, uint32_t *pgn);
 
 #endif

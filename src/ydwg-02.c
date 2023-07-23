@@ -19,50 +19,69 @@
 
 #define MAX 2048
 
-static int ydwg2pgn(char* msg, struct PNG_s *pgn)
+struct ydwg_stats_s ydwg_stats;
+
+static int ydwg2msg(char* ydwgmsg, struct nmea2000_msg_s *msg)
 {
 	struct ydwg_msg_s ydwg_msg;
 	char timestr[12];
 	int status;
 	int i;
 
-	if (strlen(msg) < 24) {
+	if (strlen(ydwgmsg) < 21) {
 		return -1;
 	}
 		
-	strptime(msg, "%H:%M:%S", &ydwg_msg.time);
-	status = sscanf(&msg[15], "%X", &ydwg_msg.pgn_header.i);
-	pgn->header.i = ydwg_msg.pgn_header.i;
+	strptime(ydwgmsg, "%H:%M:%S", &ydwg_msg.time);
+	status = sscanf(&ydwgmsg[15], "%X", &ydwg_msg.pgn_header.i);
+	if (status>0)
+		msg->header.i = ydwg_msg.pgn_header.i;
+	else
+		return -1;
 	for (i=0; i<8; i++) {
-		status = sscanf(&msg[24+i*3], "%X", &ydwg_msg.data[i]);
-		pgn->data.d[i] = ydwg_msg.data[i];
+		status = sscanf(&ydwgmsg[24+i*3], "%X", &ydwg_msg.data[i]);
+		if (status>0) {
+			msg->data.d[i] = ydwg_msg.data[i];
+			msg->dlen++;
+		} else {
+			break;
+		}
 	}
-//	pgn->header.i = (uint32_t)(((uint32_t)(ydwg_msg.pgn_header.i))>>8) & 0x1FFFF;
 
 	return 0;
 }
 
-static int ydwg2demux(char *buf, void(*msg_parser)(struct PNG_s *pgn))
+static int ydwg2demux(char *buf, void(*msg_parser)(struct nmea2000_msg_s *msg))
 {
-	char *msg;
+	char *ydwgmsg;
 	char *save;
-	struct PNG_s *pgn;
+	struct nmea2000_msg_s *msg;
 	int status;
 
-	msg = strtok_r(buf, "\n", &save);
-	while (msg && strlen(msg)) {
-		if (strlen(msg) < 24) {
-			msg = strtok_r(NULL, "\n", &save);
+	ydwgmsg = strtok_r(buf, "\n", &save);
+	while (ydwgmsg && strlen(ydwgmsg)) {
+		ydwg_stats.msgs++;
+		if (strlen(ydwgmsg) < 21) {
+			ydwg_stats.errors++;
+			printf("small len %d, \"%s\"\n", strlen(ydwgmsg), ydwgmsg);
+			ydwgmsg = strtok_r(NULL, "\n", &save);
 			continue;
 		}
-		pgn = (struct PNG_s*)malloc(sizeof(struct PNG_s));
-		status = ydwg2pgn(msg, pgn);
-		if (!status) {
-			msg_parser(pgn);
-		} else {
-			free(pgn);
+		msg = (struct nmea2000_msg_s*)malloc(sizeof(struct nmea2000_msg_s));
+		if (msg == NULL) {
+			perror("malloc");
+			continue;
 		}
-		msg = strtok_r(NULL, "\n", &save);
+		memset(msg, 0, sizeof(struct nmea2000_msg_s));
+		status = ydwg2msg(ydwgmsg, msg);
+		if (!status) {
+			nmea2000_stats.msgs++;
+			msg_parser(msg);
+		} else {
+			nmea2000_stats.errors++;
+			free(msg);
+		}
+		ydwgmsg = strtok_r(NULL, "\n", &save);
 	}
 
 	free(buf);
@@ -70,19 +89,31 @@ static int ydwg2demux(char *buf, void(*msg_parser)(struct PNG_s *pgn))
 	return 0;
 }
 
-int ydwg_rx(int sockfd, void(*msg_parser)(struct PNG_s *pgn))
+int ydwg_rx(int sockfd, void(*msg_parser)(struct nmea2000_msg_s *msg))
 {
 	char *buf;
 	int sz;
 	for (;;) {
 		buf = (char*)malloc(MAX);
+		if (buf == NULL) {
+			perror("malloc");
+			continue;
+		}
+		memset(buf, 0, MAX);
 		sz = recv(sockfd, buf, MAX, 0);
 		if (sz > 0) {
+			ydwg_stats.packets++;
 			ydwg2demux(buf, msg_parser);
 		} else if (sz == 0) {
 			printf("YDWG closed connection\n");
 		} else {
 			perror("recv");
+			ydwg_stats.errors++;
 		}
 	}
+}
+
+void ydwg_init(void)
+{
+	memset(&ydwg_stats, 0, sizeof(ydwg_stats));
 }
