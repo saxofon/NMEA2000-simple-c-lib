@@ -10,6 +10,7 @@
 #include <math.h>
 
 #define RAD2DEG(x) ((float)(x)*(180.0f/(float)(M_PI)))
+#define KTOC(x) (x*0.01f-273.15f)
 
 #define NMEA2000_ADDR_GLOBAL  0xFF
 #define NMEA2000_ADDR_UNKNOWN 0xFE

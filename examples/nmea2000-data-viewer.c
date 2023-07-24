@@ -45,6 +45,12 @@ static struct s_nmea2000_data {
 	double TWS;
 	double TWD;
 	double rudder_angle;
+	double water_temp;
+	double inside_air_humidity;
+	double inside_air_temp;
+	double outside_air_humidity;
+	double outside_air_temp;
+	double atmospheric_pressure;
 } nmea2000_data;
 
 static void pgn_parser(struct nmea2000_msg_s *msg)
@@ -104,16 +110,10 @@ static void pgn_parser(struct nmea2000_msg_s *msg)
 		case PGN_SPEED_ID:
 			nmea2000_data.STW = msg->data.speed.speed_ref_water*0.01f;
 			//nmea2000_data.SOG = msg->data.speed.speed_ref_ground*0.01f;
-			MSG_DUMP("  speed ref water type      : %d\n", msg->data.speed.speed_ref_water_type);
-			MSG_DUMP("  speed direction           : %d\n", msg->data.speed.speed_direction);
 			break;
 		case PGN_WATER_DEPTH_ID:
-			MSG_DUMP("PGN water depth             : %X %X %d\n", msg->header.i, pgn, pgn);
-			MSG_DUMP("  sender                    : %d\n", msg->header.s.sa, msg->header.s.sa);
-			MSG_DUMP("  SID                       : %d\n", msg->data.water_depth.SID);
-			MSG_DUMP("  depth                     : %0.2f m\n", msg->data.water_depth.depth*0.01);
-			MSG_DUMP("  offset                    : %0.4f m\n", msg->data.water_depth.offset*0.001);
-			MSG_DUMP("  range                     : %d\n", msg->data.water_depth.range);
+			nmea2000_data.depth = msg->data.water_depth.depth*0.01;
+			// %0.4f m,  msg->data.water_depth.offset*0.001
 			break;
 		case PGN_POSITION_RAPID_UPDATE_ID:
 			nmea2000_data.longitude = msg->data.position_rapid_update.longitude*PGN_POSITION_SCALE;
@@ -154,32 +154,30 @@ static void pgn_parser(struct nmea2000_msg_s *msg)
 			nmea2000_data.TWD = atan(a/b);
 			break;
 		case PGN_ENV_PARAM_ID:
-			MSG_DUMP("PGN env param               : %X %X %d\n", msg->header.i, pgn, pgn);
-			MSG_DUMP("  sender                    : %d\n", msg->header.s.sa, msg->header.s.sa);
-			MSG_DUMP("  SID                       : %d\n", msg->data.env_param.SID);
-			MSG_DUMP("  temp source               : %d\n", msg->data.env_param.temp_source);
-			MSG_DUMP("  humidity source           : %d\n", msg->data.env_param.humidity_source);
-			MSG_DUMP("  temperature               : %f degrees celsius\n", msg->data.env_param.temperature*0.01f-273.15);
-			MSG_DUMP("  humidity                  : %f %%\n", msg->data.env_param.humidity*0.004f);
-			MSG_DUMP("  atmospheric pressure      : %f Pascal\n", msg->data.env_param.atmospheric_pressure*100.0f);
+			if (msg->data.env_param.temp_source == 0) {
+				nmea2000_data.water_temp = KTOC(msg->data.env_param.temperature);
+			} else if (msg->data.env_param.temp_source == 1) {
+				nmea2000_data.outside_air_temp = KTOC(msg->data.env_param.temperature);
+			} else if (msg->data.env_param.temp_source == 2) {
+				nmea2000_data.inside_air_temp = KTOC(msg->data.env_param.temperature);
+			}
+			if (msg->data.env_param.humidity_source == 0) {
+				nmea2000_data.inside_air_humidity = msg->data.env_param.humidity*0.004f;
+			} else if (msg->data.env_param.humidity_source == 1) {
+				nmea2000_data.outside_air_humidity = msg->data.env_param.humidity*0.004f;
+			}
+			if (msg->data.env_param.atmospheric_pressure != 0xFFFF)
+				nmea2000_data.atmospheric_pressure = msg->data.env_param.atmospheric_pressure*100.0f;
 			break;
 		case PGN_TEMPERATURE_ID:
-			MSG_DUMP("PGN temperature             : %X %X %d\n", msg->header.i, pgn, pgn);
-			MSG_DUMP("  sender                    : %d\n", msg->header.s.sa, msg->header.s.sa);
-			MSG_DUMP("  SID                       : %d\n", msg->data.temperature.SID);
-			MSG_DUMP("  instance                  : %d\n", msg->data.temperature.instance);
-			MSG_DUMP("  source                    : %d\n", msg->data.temperature.source);
-			MSG_DUMP("  temperature               : %f degrees celsius\n", msg->data.temperature.temperature*0.01f-273.15);
-			MSG_DUMP("  set_temperature           : %f degrees celsius\n", msg->data.temperature.set_temperature*0.01f-273.15);
+			if (msg->data.temperature.source == 1) {
+				nmea2000_data.outside_air_temp = KTOC(msg->data.temperature.temperature);
+			}
 			break;
 		case PGN_TEMPERATURE_EXTENDED_ID:
-			MSG_DUMP("PGN temperature extended    : %X %X %d\n", msg->header.i, pgn, pgn);
-			MSG_DUMP("  sender                    : %d\n", msg->header.s.sa, msg->header.s.sa);
-			MSG_DUMP("  SID                       : %d\n", msg->data.temperature_extended.SID);
-			MSG_DUMP("  instance                  : %d\n", msg->data.temperature_extended.instance);
-			MSG_DUMP("  source                    : %d\n", msg->data.temperature_extended.source);
-			MSG_DUMP("  temperature               : %f degrees celsius\n", msg->data.temperature_extended.temperature*0.001f-273.15f);
-			MSG_DUMP("  set_temperature           : %f degrees celsius\n", msg->data.temperature_extended.set_temperature*0.1f-273.15f);
+			if ( msg->data.temperature_extended.source == 1) {
+				nmea2000_data.outside_air_temp = KTOC(msg->data.temperature_extended.temperature);
+			}
 			break;
 	}
 
@@ -225,23 +223,27 @@ static void *data_viewer(void *arg)
 
 	for (;;) {
 		mvprintw( 0,0, "Date&time         : %s", asctime_r(&nmea2000_data.tm, tmbuf));
-		mvprintw( 2,0, "SOG/COG           : %5.2f m/s %4.0f°", nmea2000_data.SOG, RAD2DEG(nmea2000_data.COG));
+		mvprintw( 2,0, "SOG/COG           : %5.2f m/s %3.0f°", nmea2000_data.SOG, RAD2DEG(nmea2000_data.COG));
 		mvprintw( 3,0, "STW               : %5.2f m/s", nmea2000_data.STW);
-		mvprintw( 5,0, "Drift speed/angle : %5.2f m/s %4.0f°", nmea2000_data.drift_speed, RAD2DEG(nmea2000_data.drift_angle));
-		mvprintw( 7,0, "AWS/AWA/AWD       : %5.2f m/s %4.0f° %4.0f°", nmea2000_data.AWS, RAD2DEG(nmea2000_data.AWA), RAD2DEG(nmea2000_data.AWD));
-		mvprintw( 8,0, "TWS/TWD           : %5.2f m/s %4.0f°", nmea2000_data.TWS, RAD2DEG(nmea2000_data.TWD));
-		mvprintw(10,0, "Rudder angle      : %4.0f°", RAD2DEG(nmea2000_data.rudder_angle));
-		mvprintw(12,0, "Vessel heading    : %4.0f°", RAD2DEG(nmea2000_data.heading));
-		mvprintw(13,0, "autopilot heading true/magnetic : %4.0f°/%4.0f°",
+		mvprintw( 5,0, "Drift speed/angle : %5.2f m/s %3.0f°", nmea2000_data.drift_speed, RAD2DEG(nmea2000_data.drift_angle));
+		mvprintw( 7,0, "AWS/AWA/AWD       : %5.2f m/s %3.0f° %4.0f°", nmea2000_data.AWS, RAD2DEG(nmea2000_data.AWA), RAD2DEG(nmea2000_data.AWD));
+		mvprintw( 8,0, "TWS/TWD           : %5.2f m/s %3.0f°", nmea2000_data.TWS, RAD2DEG(nmea2000_data.TWD));
+		mvprintw(10,0, "Rudder angle      : %3.0f°", RAD2DEG(nmea2000_data.rudder_angle));
+		mvprintw(12,0, "Vessel heading    : %3.0f°M", RAD2DEG(nmea2000_data.heading));
+		mvprintw(13,0, "Autopilot heading true/magnetic : %3.0f°T/%3.0f°M",
 			RAD2DEG(nmea2000_data.autopilot_heading_true), RAD2DEG(nmea2000_data.autopilot_heading_magnetic));
-		mvprintw(15,0, "YDWG02 stats   : packets %d, msgs %d, errors %d",
-			ydwg_stats.packets, ydwg_stats.msgs, ydwg_stats.errors);
-		mvprintw(16,0, "NMEA2000 stats : msgs %d, errors %d",
+		mvprintw(18,0, "Water depth/temp  : %4.2f m %4.1f °C", nmea2000_data.depth, nmea2000_data.water_temp);
+		mvprintw(19,0, "Inside Air humidity/temp  : %4.2f %% %4.1f °C", nmea2000_data.inside_air_humidity, nmea2000_data.inside_air_temp);
+		mvprintw(20,0, "Outside Air humidity/temp : %4.2f %% %4.1f °C", nmea2000_data.outside_air_humidity, nmea2000_data.outside_air_temp);
+		mvprintw(20,45, "Atmospheric pressure : %4.1f hPa", nmea2000_data.atmospheric_pressure/100.0);
+		mvprintw(22, 0, "map url : https://www.google.com/maps/@?api=1&map_action=map&center=%f,%f&basemap=satellite",
+			nmea2000_data.longitude, nmea2000_data.latitude);
+		mvprintw(23, 0, "map url : https://www.google.com/maps/search/?api=1&query=%f,%f",
+			nmea2000_data.longitude, nmea2000_data.latitude);
+		mvprintw(25,0, "YDWG02 stats   : packets %d (of which are errors %d), msgs %d ( errors %d)",
+			ydwg_stats.packets, ydwg_stats.packet_errors, ydwg_stats.msgs, ydwg_stats.msg_errors);
+		mvprintw(26,0, "NMEA2000 stats : msgs %d, errors %d",
 			nmea2000_stats.msgs, nmea2000_stats.errors);
-		mvprintw(20, 0, "map url : https://www.google.com/maps/@?api=1&map_action=map&center=%f,%f&basemap=satellite",
-			nmea2000_data.longitude, nmea2000_data.latitude);
-		mvprintw(21, 0, "map url : https://www.google.com/maps/search/?api=1&query=%f,%f&basemap=satellite",
-			nmea2000_data.longitude, nmea2000_data.latitude);
 		refresh();
 		sleep(1);
 	}

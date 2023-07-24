@@ -62,8 +62,8 @@ static int ydwg2demux(char *buf, void(*msg_parser)(struct nmea2000_msg_s *msg))
 	while (ydwgmsg && strlen(ydwgmsg)) {
 		ydwg_stats.msgs++;
 		if (strlen(ydwgmsg) < 21) {
-			ydwg_stats.errors++;
-			printf("small len %d, \"%s\"\n", strlen(ydwgmsg), ydwgmsg);
+			ydwg_stats.msg_errors++;
+			//printf("small len %d, \"%s\"\n", strlen(ydwgmsg), ydwgmsg);
 			ydwgmsg = strtok_r(NULL, "\n", &save);
 			continue;
 		}
@@ -108,7 +108,7 @@ int ydwg_rx(int sockfd, void(*msg_parser)(struct nmea2000_msg_s *msg))
 			printf("YDWG closed connection\n");
 		} else {
 			perror("recv");
-			ydwg_stats.errors++;
+			ydwg_stats.packet_errors++;
 		}
 	}
 }

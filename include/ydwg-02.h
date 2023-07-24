@@ -9,7 +9,8 @@
 struct ydwg_stats_s {
 	uint32_t packets;
 	uint32_t msgs;
-	uint32_t errors;
+	uint32_t packet_errors;
+	uint32_t msg_errors;
 };
 
 extern struct ydwg_stats_s ydwg_stats;
