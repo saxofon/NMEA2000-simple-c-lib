@@ -1,5 +1,3 @@
-* integrate as shared library
-
 * make ydwg a backend of nmea2000 layer.
   applications will use NMEA2000 API's,
   init with backend and it's needed configs.

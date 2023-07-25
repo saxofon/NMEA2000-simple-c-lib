@@ -4,25 +4,31 @@
 APPS += build/nmea2000-bus-dumper
 APPS += build/nmea2000-data-viewer
 
-SRCS += src/nmea2000.c
-SRCS += src/ydwg-02.c
+LIB += build/libnmea2000.so
 
-INCS += include/PGNS/127250_vessel_heading.h
+LIB_SRCS += src/nmea2000.c
+LIB_SRCS += src/ydwg-02.c
+
+LIB_CFLAGS += -fPIC -Iinclude
+LIB_LDFLAGS += -shared
 
 CFLAGS += -Iinclude -g
 LIBS += -lm -lcurses -lpthread
+LIBS += -Lbuild -lnmea2000
 
-all: $(APPS) build/nmea2000-data-viewer
+all: $(LIB) $(APPS)
 
-$(SRCS): $(INCS)
-
-build/nmea2000-bus-dumper: examples/nmea2000-bus-dumper.c $(SRCS)
+$(LIB): $(LIB_SRCS)
 	mkdir -p build
-	$(CC) $(CFLAGS) -o $@ $^
+	$(CC) $(LIB_CFLAGS) $(LIB_LDFLAGS) -o $@ $^
 
-build/nmea2000-data-viewer: examples/nmea2000-data-viewer.c $(SRCS)
+build/nmea2000-bus-dumper: examples/nmea2000-bus-dumper.c
 	mkdir -p build
-	$(CC) $(CFLAGS) -o $@ $^ $(LIBS)
+	$(CC) $(CFLAGS) $(LIBS) -o $@ $^
+
+build/nmea2000-data-viewer: examples/nmea2000-data-viewer.c
+	mkdir -p build
+	$(CC) $(CFLAGS) $(LIBS) -o $@ $^
 
 clean:
 	$(RM) -r build

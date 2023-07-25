@@ -34,7 +34,7 @@ static int ydwg2msg(char* ydwgmsg, struct nmea2000_msg_s *msg)
 		
 	strptime(ydwgmsg, "%H:%M:%S", &ydwg_msg.time);
 	status = sscanf(&ydwgmsg[15], "%X", &ydwg_msg.pgn_header.i);
-	if (status>0)
+	if (status > 0)
 		msg->header.i = ydwg_msg.pgn_header.i;
 	else
 		return -1;
@@ -77,14 +77,10 @@ static int ydwg2demux(char *buf, void(*msg_parser)(struct nmea2000_msg_s *msg))
 		if (!status) {
 			nmea2000_stats.msgs++;
 			msg_parser(msg);
-		} else {
-			nmea2000_stats.errors++;
-			free(msg);
-		}
+		} 
+		free(msg);
 		ydwgmsg = strtok_r(NULL, "\n", &save);
 	}
-
-	free(buf);
 
 	return 0;
 }
@@ -106,10 +102,13 @@ int ydwg_rx(int sockfd, void(*msg_parser)(struct nmea2000_msg_s *msg))
 			ydwg2demux(buf, msg_parser);
 		} else if (sz == 0) {
 			printf("YDWG closed connection\n");
+			free(buf);
+			return(-1);
 		} else {
 			perror("recv");
 			ydwg_stats.packet_errors++;
 		}
+		free(buf);
 	}
 }
 

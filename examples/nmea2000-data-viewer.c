@@ -180,8 +180,6 @@ static void pgn_parser(struct nmea2000_msg_s *msg)
 			}
 			break;
 	}
-
-	free(msg);
 }
 
 static void *nmea2000_rx(void *arg)
@@ -195,21 +193,22 @@ static void *nmea2000_rx(void *arg)
 		printf("socket creation failed...\n");
 		exit(0);
 	}
-	bzero(&servaddr, sizeof(servaddr));
-
-	servaddr.sin_family = AF_INET;
-	servaddr.sin_addr.s_addr = inet_addr("192.168.3.100");
-	servaddr.sin_port = htons(1457);
-
-	if (connect(sockfd, (SA*)&servaddr, sizeof(servaddr)) != 0) {
-		printf("connection with the server failed...\n");
-		exit(0);
-	}
 
 	ydwg_init();
 
-	// this call doesn't return
-	ydwg_rx(sockfd, pgn_parser);
+	while (true) {
+		bzero(&servaddr, sizeof(servaddr));
+		servaddr.sin_family = AF_INET;
+		servaddr.sin_addr.s_addr = inet_addr("192.168.3.100");
+		servaddr.sin_port = htons(1457);
+
+		if (connect(sockfd, (SA*)&servaddr, sizeof(servaddr)) != 0) {
+			printf("connection with the server failed...\n");
+			exit(0);
+		}
+
+		ydwg_rx(sockfd, pgn_parser);
+	}
 }
 
 static void *data_viewer(void *arg)
