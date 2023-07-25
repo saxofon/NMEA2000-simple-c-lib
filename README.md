@@ -75,7 +75,9 @@ and we now have the example applications in our build directory :
 build/
 ├── libnmea2000.so
 ├── nmea2000-bus-dumper
-└── nmea2000-data-viewer
+├── nmea2000-data-viewer
+└── nmea2000-simple-msg
+
 
 1 directory, 3 files
 [per@phlap2 NMEA2000-simple-c-lib]$ 
@@ -104,5 +106,16 @@ PGN wind data               : 9FD0220 1FD02 130306
   AWS                       : 6.7 m/s
   AWA                       : 250.0 degrees
   reference                 : 2
+...
+```
+
+Next, a simplified application showing the integrations needed
+```
+[per@phlap2 NMEA2000-simple-c-lib]$ LD_LIBRARY_PATH=build build/nmea2000-simple-msg
+ NMEA2000 system date/time : Tue Jul 25 13:00:04 2023
+
+ NMEA2000 system date/time : Tue Jul 25 13:00:06 2023
+
+ NMEA2000 system date/time : Tue Jul 25 13:00:07 2023
 ...
 ```

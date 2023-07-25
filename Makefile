@@ -3,6 +3,7 @@
 
 APPS += build/nmea2000-bus-dumper
 APPS += build/nmea2000-data-viewer
+APPS += build/nmea2000-simple-msg
 
 LIB += build/libnmea2000.so
 
@@ -27,6 +28,10 @@ build/nmea2000-bus-dumper: examples/nmea2000-bus-dumper.c
 	$(CC) $(CFLAGS) $(LIBS) -o $@ $^
 
 build/nmea2000-data-viewer: examples/nmea2000-data-viewer.c
+	mkdir -p build
+	$(CC) $(CFLAGS) $(LIBS) -o $@ $^
+
+build/nmea2000-simple-msg: examples/nmea2000-simple-msg.c
 	mkdir -p build
 	$(CC) $(CFLAGS) $(LIBS) -o $@ $^
 
