@@ -232,16 +232,16 @@ static void *data_viewer(void *arg)
 		mvprintw(13,0, "Autopilot heading true/magnetic : %3.0f°T/%3.0f°M",
 			RAD2DEG(nmea2000_data.autopilot_heading_true), RAD2DEG(nmea2000_data.autopilot_heading_magnetic));
 		mvprintw(18,0, "Water depth/temp  : %4.2f m %4.1f °C", nmea2000_data.depth, nmea2000_data.water_temp);
-		mvprintw(19,0, "Inside Air humidity/temp  : %4.2f %% %4.1f °C", nmea2000_data.inside_air_humidity, nmea2000_data.inside_air_temp);
-		mvprintw(20,0, "Outside Air humidity/temp : %4.2f %% %4.1f °C", nmea2000_data.outside_air_humidity, nmea2000_data.outside_air_temp);
+		mvprintw(19,0, "Inside Air humidity/temp  : %4.1f %% %4.1f °C", nmea2000_data.inside_air_humidity, nmea2000_data.inside_air_temp);
+		mvprintw(20,0, "Outside Air humidity/temp : %4.1f %% %4.1f °C", nmea2000_data.outside_air_humidity, nmea2000_data.outside_air_temp);
 		mvprintw(20,45, "Atmospheric pressure : %4.1f hPa", nmea2000_data.atmospheric_pressure/100.0);
 		mvprintw(22, 0, "map url : https://www.google.com/maps/@?api=1&map_action=map&center=%f,%f&basemap=satellite",
 			nmea2000_data.longitude, nmea2000_data.latitude);
 		mvprintw(23, 0, "map url : https://www.google.com/maps/search/?api=1&query=%f,%f",
 			nmea2000_data.longitude, nmea2000_data.latitude);
-		mvprintw(25,0, "YDWG02 stats   : packets %d (of which are errors %d), msgs %d ( errors %d)",
+		mvprintw(25,0, "YDWG02 stats   : packets %d (errors %d), msgs %d (errors %d)",
 			ydwg_stats.packets, ydwg_stats.packet_errors, ydwg_stats.msgs, ydwg_stats.msg_errors);
-		mvprintw(26,0, "NMEA2000 stats : msgs %d, errors %d",
+		mvprintw(26,0, "NMEA2000 stats : msgs %d (errors %d)",
 			nmea2000_stats.msgs, nmea2000_stats.errors);
 		refresh();
 		sleep(1);

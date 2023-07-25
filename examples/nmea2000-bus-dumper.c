@@ -204,8 +204,6 @@ static void pgn_parser(struct nmea2000_msg_s *msg)
 			printf("Unknown message!\n");
 			nmea2000_dump_msg(msg);
 	}
-
-	free(msg);
 }
 
 int main(int argc, char *argv[])
