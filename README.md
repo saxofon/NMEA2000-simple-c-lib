@@ -8,7 +8,7 @@ Connection to NMEA2000 bus (or really Raymarine STNG bus, same signals but diffe
 is made via YDWG-02 https://www.yachtd.com/products/wifi_gateway.html
 
 ## library
-source is in include and src, currently not integrated as shared lib... still on todo list :)
+source is in include and src, with some example usage in examples/*.c
 
 ```
 [per@phlap2 NMEA2000-simple-c-lib]$ tree include/ src/
@@ -60,10 +60,12 @@ Examples are built via a simple "make" :
 ```
 [per@phlap2 NMEA2000-simple-c-lib]$ make
 mkdir -p build
-cc -Iinclude -g -o build/nmea2000-bus-dumper examples/nmea2000-bus-dumper.c src/nmea2000.c src/ydwg-02.c
+cc -fPIC -Iinclude -shared -o build/libnmea2000.so src/nmea2000.c src/ydwg-02.c
 mkdir -p build
-cc -Iinclude -g -o build/nmea2000-data-viewer examples/nmea2000-data-viewer.c src/nmea2000.c src/ydwg-02.c -lcurses -lpthread
-[per@phlap2 NMEA2000-simple-c-lib]$ 
+cc -Iinclude -g -lm -lcurses -lpthread -Lbuild -lnmea2000 -o build/nmea2000-bus-dumper examples/nmea2000-bus-dumper.c
+mkdir -p build
+cc -Iinclude -g -lm -lcurses -lpthread -Lbuild -lnmea2000 -o build/nmea2000-data-viewer examples/nmea2000-data-viewer.c
+[per@phlap2 NMEA2000-simple-c-lib]$
 ```
 
 and we now have the example applications in our build directory :
@@ -71,10 +73,11 @@ and we now have the example applications in our build directory :
 ```
 [per@phlap2 NMEA2000-simple-c-lib]$ tree build/
 build/
+├── libnmea2000.so
 ├── nmea2000-bus-dumper
 └── nmea2000-data-viewer
 
-1 directory, 2 files
+1 directory, 3 files
 [per@phlap2 NMEA2000-simple-c-lib]$ 
 ```
 
@@ -82,7 +85,7 @@ build/
 
 No options or so, currently IP/port is hardcoded in the examples so we just run them standalone like :
 ```
-[per@phlap2 NMEA2000-simple-c-lib]$ ./build/nmea2000-bus-dumper 
+[per@phlap2 NMEA2000-simple-c-lib]$ LD_LIBRARY_PATH=build build/nmea2000-bus-dumper 
 PGN wind data               : 9FD0219 1FD02 130306
   sender                    : 9
   SID                       : 255
