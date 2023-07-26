@@ -17,7 +17,7 @@
 #include "nmea2000.h"
 #include "ydwg-02.h"
 
-#define MAX 2048
+#define MAX 65536
 
 struct ydwg_stats_s ydwg_stats;
 
