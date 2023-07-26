@@ -214,6 +214,8 @@ static void *nmea2000_rx(void *arg)
 static void *data_viewer(void *arg)
 {
 	char tmbuf[32];
+	struct nmea2000_stats_s nmea2000_stats_old;
+	struct ydwg_stats_s ydwg_stats_old;
 
 	initscr();
 	cbreak();
@@ -239,10 +241,21 @@ static void *data_viewer(void *arg)
 			nmea2000_data.longitude, nmea2000_data.latitude);
 		mvprintw(23, 0, "map url : https://www.google.com/maps/search/?api=1&query=%f,%f",
 			nmea2000_data.longitude, nmea2000_data.latitude);
-		mvprintw(25,0, "YDWG02 stats   : packets %d (errors %d), msgs %d (errors %d)",
-			ydwg_stats.packets, ydwg_stats.packet_errors, ydwg_stats.msgs, ydwg_stats.msg_errors);
-		mvprintw(26,0, "NMEA2000 stats : msgs %d (errors %d)",
-			nmea2000_stats.msgs, nmea2000_stats.errors);
+		mvprintw(25,0, "YDWG02 stats   : packets %d (%d pkts/s, errors %d), msgs %d (%d msgs/s, errors %d)",
+			ydwg_stats.packets,
+			ydwg_stats.packets - ydwg_stats_old.packets,
+			ydwg_stats.packet_errors,
+			ydwg_stats.msgs,
+			ydwg_stats.msgs - ydwg_stats_old.msgs,
+			ydwg_stats.msg_errors);
+		mvprintw(26,0, "NMEA2000 stats : msgs %d (%d msgs/s, errors %d)",
+			nmea2000_stats.msgs,
+			nmea2000_stats.msgs - nmea2000_stats_old.msgs,
+			nmea2000_stats.errors);
+
+		memcpy(&nmea2000_stats_old, &nmea2000_stats, sizeof(struct nmea2000_stats_s));
+		memcpy(&ydwg_stats_old, &ydwg_stats, sizeof(struct ydwg_stats_s));
+		
 		refresh();
 		sleep(1);
 	}
