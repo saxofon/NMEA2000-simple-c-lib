@@ -178,9 +178,9 @@ static void pgn_parser(struct nmea2000_msg_s *msg)
 			MSG_LOG("  SID                       : %d\n", msg->data.env_param.SID);
 			MSG_LOG("  temp source               : %d\n", msg->data.env_param.temp_source);
 			MSG_LOG("  humidity source           : %d\n", msg->data.env_param.humidity_source);
-			MSG_LOG("  temperature               : %f degrees celsius\n", msg->data.env_param.temperature*0.01f-273.15);
-			MSG_LOG("  humidity                  : %f %%\n", msg->data.env_param.humidity*0.004f);
-			MSG_LOG("  atmospheric pressure      : %f Pascal\n", msg->data.env_param.atmospheric_pressure*100.0f);
+			MSG_LOG("  temperature               : %f degrees celsius\n", KTOC((float)(msg->data.env_param.temperature)*0.01f));
+			MSG_LOG("  humidity                  : %f %%\n", (float)(msg->data.env_param.humidity)*0.004f);
+			MSG_LOG("  atmospheric pressure      : %4.1f hPa\n", (float)(msg->data.env_param.atmospheric_pressure));
 			break;
 		case PGN_TEMPERATURE_ID:
 			MSG_LOG("PGN temperature             : %X %X %d\n", msg->header.i, pgn, pgn);
@@ -188,8 +188,8 @@ static void pgn_parser(struct nmea2000_msg_s *msg)
 			MSG_LOG("  SID                       : %d\n", msg->data.temperature.SID);
 			MSG_LOG("  instance                  : %d\n", msg->data.temperature.instance);
 			MSG_LOG("  source                    : %d\n", msg->data.temperature.source);
-			MSG_LOG("  temperature               : %f degrees celsius\n", msg->data.temperature.temperature*0.01f-273.15);
-			MSG_LOG("  set_temperature           : %f degrees celsius\n", msg->data.temperature.set_temperature*0.01f-273.15);
+			MSG_LOG("  temperature               : %f degrees celsius\n", KTOC((float)(msg->data.temperature.temperature)*0.01f));
+			MSG_LOG("  set_temperature           : %f degrees celsius\n", KTOC((float)(msg->data.temperature.set_temperature)*0.01f));
 			break;
 		case PGN_TEMPERATURE_EXTENDED_ID:
 			MSG_LOG("PGN temperature extended    : %X %X %d\n", msg->header.i, pgn, pgn);
@@ -197,8 +197,8 @@ static void pgn_parser(struct nmea2000_msg_s *msg)
 			MSG_LOG("  SID                       : %d\n", msg->data.temperature_extended.SID);
 			MSG_LOG("  instance                  : %d\n", msg->data.temperature_extended.instance);
 			MSG_LOG("  source                    : %d\n", msg->data.temperature_extended.source);
-			MSG_LOG("  temperature               : %f degrees celsius\n", msg->data.temperature_extended.temperature*0.001f-273.15f);
-			MSG_LOG("  set_temperature           : %f degrees celsius\n", msg->data.temperature_extended.set_temperature*0.1f-273.15f);
+			MSG_LOG("  temperature               : %f degrees celsius\n", KTOC((float)(msg->data.temperature_extended.temperature)*0.001f));
+			MSG_LOG("  set_temperature           : %f degrees celsius\n", KTOC((float)(msg->data.temperature_extended.set_temperature)*0.01f));
 			break;
 		default:
 			printf("Unknown message!\n");
