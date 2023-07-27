@@ -259,7 +259,9 @@ static void *data_viewer(void *arg)
 		memcpy(&nmea2000_stats_old, &nmea2000_stats, sizeof(struct nmea2000_stats_s));
 		memcpy(&ydwg_stats_old, &ydwg_stats, sizeof(struct ydwg_stats_s));
 		
+		redrawwin(stdscr);
 		refresh();
+
 		sleep(1);
 	}
 
