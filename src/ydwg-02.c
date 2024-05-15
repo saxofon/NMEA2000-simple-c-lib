@@ -3,6 +3,7 @@
   SPDX-License-Identifier: GPL-2.0
 */
 
+#include <errno.h>
 #include <netdb.h>
 #include <unistd.h>
 #include <stdio.h>
@@ -33,19 +34,18 @@ static int ydwg2msg(char* ydwgmsg, struct nmea2000_msg_s *msg)
 	}
 		
 	strptime(ydwgmsg, "%H:%M:%S", &ydwg_msg.time);
-	status = sscanf(&ydwgmsg[15], "%X", &ydwg_msg.pgn_header.i);
-	if (status > 0)
-		msg->header.i = ydwg_msg.pgn_header.i;
-	else
+	errno=0;
+	ydwg_msg.pgn_header.i = strtol(&ydwgmsg[15], NULL, 16);
+	if (errno)
 		return -1;
+	msg->header.i = ydwg_msg.pgn_header.i;
 	for (i=0; i<8; i++) {
-		status = sscanf(&ydwgmsg[24+i*3], "%X", &ydwg_msg.data[i]);
-		if (status>0) {
-			msg->data.d[i] = ydwg_msg.data[i];
-			msg->dlen++;
-		} else {
+		errno=0;
+		ydwg_msg.data[i] = strtol(&ydwgmsg[24+i*3], NULL, 16);
+		if (errno)
 			break;
-		}
+		msg->data.d[i] = ydwg_msg.data[i];
+		msg->dlen++;
 	}
 
 	return 0;
@@ -60,6 +60,7 @@ static int ydwg2demux(char *buf, void(*msg_parser)(struct nmea2000_msg_s *msg))
 
 	ydwgmsg = strtok_r(buf, "\n", &save);
 	while (ydwgmsg && strlen(ydwgmsg)) {
+		//printf("msg \"%s\"\n", ydwgmsg);
 		ydwg_stats.msgs++;
 		if (strlen(ydwgmsg) < 21) {
 			ydwg_stats.msg_errors++;
