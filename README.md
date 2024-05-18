@@ -123,6 +123,7 @@ Next, a simplified application showing the integrations needed
 ####  Example ydwg-02-to-socketcan usage for Victron Energy product Cerbo
 
 1. build via venos SDK
+```
    [per@phlap2 NMEA2000-simple-c-lib]$ docker build -t venus-sdk:0.1 .
    [per@phlap2 NMEA2000-simple-c-lib]$ docker run -v $(pwd):/work -it venus-sdk:0.1 bash
    root@68b9f3011c9e:/# . /opt/venus/dunfell-arm-cortexa8hf-neon/environment-setup-cortexa8hf-neon-ve-linux-gnueabi 
@@ -139,19 +140,32 @@ Next, a simplified application showing the integrations needed
    mkdir -p build
    arm-ve-linux-gnueabi-gcc  -mfpu=neon -mfloat-abi=hard -mcpu=cortex-a8 --sysroot=/opt/venus/dunfell-arm-cortexa8hf-neon/sysroots/cortexa8hf-neon-ve-linux-gnueabi  -O2 -pipe -g -feliminate-unused-debug-types  -Iinclude -g -lm -lcurses -ltinfo -lpthread -Lbuild -lnmea2000 -o build/ydwg-02-to-socketcan examples/ydwg-02-to-socketcan.c
    root@68b9f3011c9e:/work# 
+```
 
 2. copy libnmea200.so and ydwg-02-to-socketcan to venus
 3. possibly install the depending curses library
+```
    opkg install libncurses5
+```
 4. create vcan0
+```
    ip link add dev vcan0 type vcan
+```
 5. something in Venus OS is now automatically bringing this interface up,
    so we need to down it at first
+```
    ip link set dev vcan0 down
+```
 6. change vcan0 MTU to 16
+```
    ip link set vcan0 mtu 16
+```
 7. now we can up the interface again
+```
    ip link set dev vcan0 up
+```
 8. run the gateway app!
+```
    root@einstein:~# LD_LIBRARY_PATH=. ./ydwg-02-to-socketcan
+```
     
