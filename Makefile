@@ -15,7 +15,7 @@ LIB_CFLAGS += -fPIC -Iinclude
 LIB_LDFLAGS += -shared
 
 CFLAGS += -Iinclude -g
-LIBS += -lm -lcurses -lpthread
+LIBS += -lm -lcurses -ltinfo -lpthread
 LIBS += -Lbuild -lnmea2000
 
 all: $(LIB) $(APPS)
