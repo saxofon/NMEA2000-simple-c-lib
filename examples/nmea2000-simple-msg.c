@@ -36,7 +36,7 @@ static void pgn_parser(struct nmea2000_msg_s *msg)
 
 int main(int argc, char *argv[])
 {
-	int sockfd, connfd;
+	int sockfd;
 	struct sockaddr_in servaddr, cli;
 
 	tzset();
