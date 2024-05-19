@@ -139,15 +139,9 @@ int ydwg_rx(int sockfd, void(*msg_parser)(struct nmea2000_msg_s *msg))
 
 int ydwg_tx(int sockfd, struct nmea2000_msg_s *msg)
 {
-	char *buf;
+	char buf[MAX];
 	int sz;
 	int status;
-
-	buf = (char*)malloc(MAX);
-	if (buf == NULL) {
-		perror("malloc");
-		return(-1);
-	}
 
 	sz = msg2ydwg(msg, buf);
 	if (sz < 0) {
