@@ -29,10 +29,15 @@ static int ydwg2msg(char* ydwgmsg, struct nmea2000_msg_s *msg)
 	int status;
 	int i;
 
+	// filter out too small msgs
 	if (strlen(ydwgmsg) < 21) {
 		return -1;
 	}
 		
+	// filter out our own sent msgs
+	if (ydwgmsg[13] == 'T') {
+		return -1;
+	}
 	strptime(ydwgmsg, "%H:%M:%S", &ydwg_msg.time);
 	errno=0;
 	ydwg_msg.pgn_header.i = strtol(&ydwgmsg[15], NULL, 16);
@@ -49,6 +54,25 @@ static int ydwg2msg(char* ydwgmsg, struct nmea2000_msg_s *msg)
 	}
 
 	return 0;
+}
+
+static int msg2ydwg(struct nmea2000_msg_s *msg, char *ydwgmsg)
+{
+	int idx_str=0;
+	int idx_data;
+
+	// frame header
+	idx_str = sprintf(&ydwgmsg[0], "%8.8X", msg->header.i);
+
+	// frame data bytes
+	for (idx_data=0; idx_data < msg->dlen; idx_data++) {
+		idx_str += sprintf(&ydwgmsg[idx_str], " %2.2X", msg->data.d[idx_data]);
+	}
+
+	// frame end
+	idx_str += sprintf(&ydwgmsg[idx_str], "\r\n");
+
+	return(idx_str);
 }
 
 static int ydwg2demux(char *buf, void(*msg_parser)(struct nmea2000_msg_s *msg))
@@ -110,6 +134,31 @@ int ydwg_rx(int sockfd, void(*msg_parser)(struct nmea2000_msg_s *msg))
 			ydwg_stats.packet_errors++;
 		}
 		free(buf);
+	}
+}
+
+int ydwg_tx(int sockfd, struct nmea2000_msg_s *msg)
+{
+	char *buf;
+	int sz;
+	int status;
+
+	buf = (char*)malloc(MAX);
+	if (buf == NULL) {
+		perror("malloc");
+		return(-1);
+	}
+
+	sz = msg2ydwg(msg, buf);
+	if (sz < 0) {
+		perror("can frame to ydwg frame conversion");
+		return(-1);
+	}
+
+	status = write(sockfd, buf, sz);
+	if (status != sz) {
+		perror("ydwg write");
+		return(-1);
 	}
 }
 

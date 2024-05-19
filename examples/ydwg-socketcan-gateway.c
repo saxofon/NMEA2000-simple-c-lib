@@ -1,5 +1,5 @@
 /*
-  Copyright (c) 2023 Per Hallsmark <per@hallsmark.se>
+  Copyright (c) 2024 Per Hallsmark <per@hallsmark.se>
   SPDX-License-Identifier: GPL-2.0
 */
 
@@ -7,6 +7,7 @@
 #include <linux/can.h>
 #include <linux/if.h>
 #include <netdb.h>
+#include <pthread.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -47,11 +48,41 @@ static void socketcan_tx(struct nmea2000_msg_s *msg)
 	}
 }
 
+static void *from_ydwg(void *arg)
+{
+	ydwg_rx(socket_ydwg, socketcan_tx);
+}
+
+static void *to_ydwg(void *arg)
+{
+	int status;
+	struct can_frame frame;
+	struct nmea2000_msg_s msg;
+
+	for (;;) {
+		status = read(socket_can, &frame, sizeof(struct can_frame));
+		if (status < 0) {
+			perror("socketcan rx");
+			pthread_exit(NULL);
+		}
+
+		msg.header.i = frame.can_id;
+		msg.dlen = frame.can_dlc;
+		memcpy(msg.data.d, frame.data, frame.can_dlc);
+
+		ydwg_tx(socket_ydwg, &msg);
+	}
+}
+
 int main()
 {
 	struct sockaddr_in ydwg_addr;
 	struct sockaddr_can can_addr;
 	struct ifreq can_ifr;
+	pthread_t from_ydwg_tid;
+	pthread_t to_ydwg_tid;
+	void *from_ydwg_status;
+	void *to_ydwg_status;
 
 	tzset();
 
@@ -88,7 +119,13 @@ int main()
 	bind(socket_can, (struct sockaddr *)&can_addr, sizeof(can_addr));
 
 	// YDWG-02 -> socketcan
-	ydwg_rx(socket_ydwg, socketcan_tx);
+	pthread_create(&from_ydwg_tid, NULL, from_ydwg, NULL);
+
+	// socketcan -> YDWG-02
+	pthread_create(&to_ydwg_tid, NULL, to_ydwg, NULL);
+
+	pthread_join(from_ydwg_tid, &from_ydwg_status);
+	pthread_join(to_ydwg_tid, &to_ydwg_status);
 
 	close(socket_ydwg);
 	close(socket_can);

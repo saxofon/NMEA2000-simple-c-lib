@@ -34,6 +34,7 @@ struct ydwg_msg_s {
 };
 
 extern int ydwg_rx(int sockfd, void(*pgn_parser)(struct nmea2000_msg_s *msg));
+extern int ydwg_tx(int sockfd, struct nmea2000_msg_s *msg);
 extern void ydwg_init(void);
 
 #endif
