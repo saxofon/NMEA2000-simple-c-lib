@@ -120,7 +120,7 @@ Next, a simplified application showing the integrations needed
 ...
 ```
 
-####  Example ydwg-02-to-socketcan usage for Victron Energy product Cerbo
+####  Example ydwg-socketcan-gateway usage for Victron Energy product Cerbo
 
 1. build via venos SDK
 ```
@@ -138,11 +138,11 @@ Next, a simplified application showing the integrations needed
    mkdir -p build
    arm-ve-linux-gnueabi-gcc  -mfpu=neon -mfloat-abi=hard -mcpu=cortex-a8 --sysroot=/opt/venus/dunfell-arm-cortexa8hf-neon/sysroots/cortexa8hf-neon-ve-linux-gnueabi  -O2 -pipe -g -feliminate-unused-debug-types  -Iinclude -g -lm -lcurses -ltinfo -lpthread -Lbuild -lnmea2000 -o build/nmea2000-simple-msg examples/nmea2000-simple-msg.c
    mkdir -p build
-   arm-ve-linux-gnueabi-gcc  -mfpu=neon -mfloat-abi=hard -mcpu=cortex-a8 --sysroot=/opt/venus/dunfell-arm-cortexa8hf-neon/sysroots/cortexa8hf-neon-ve-linux-gnueabi  -O2 -pipe -g -feliminate-unused-debug-types  -Iinclude -g -lm -lcurses -ltinfo -lpthread -Lbuild -lnmea2000 -o build/ydwg-02-to-socketcan examples/ydwg-02-to-socketcan.c
+   arm-ve-linux-gnueabi-gcc  -mfpu=neon -mfloat-abi=hard -mcpu=cortex-a8 --sysroot=/opt/venus/dunfell-arm-cortexa8hf-neon/sysroots/cortexa8hf-neon-ve-linux-gnueabi  -O2 -pipe -g -feliminate-unused-debug-types  -Iinclude -g -lm -lcurses -ltinfo -lpthread -Lbuild -lnmea2000 -o build/ydwg-socketcan-gateway examples/ydwg-socketcan-gateway.c
    root@68b9f3011c9e:/work# 
 ```
 
-2. copy libnmea200.so and ydwg-02-to-socketcan to venus
+2. copy libnmea200.so and ydwg-socketcan-gateway to venus
 3. possibly install the depending curses library
 ```
    opkg install libncurses5
@@ -166,6 +166,6 @@ Next, a simplified application showing the integrations needed
 ```
 8. run the gateway app!
 ```
-   root@einstein:~# LD_LIBRARY_PATH=. ./ydwg-02-to-socketcan
+   root@einstein:~# LD_LIBRARY_PATH=. ./ydwg-socketcan-gateway
 ```
     
