@@ -43,6 +43,8 @@ static struct s_nmea2000_data {
 	double AWA;
 	double AWD;
 	double TWS;
+	double TWS_avg;
+	double TWS_max;
 	double TWD;
 	double rudder_angle;
 	double water_temp;
@@ -151,6 +153,8 @@ static void pgn_parser(struct nmea2000_msg_s *msg)
 			a = nmea2000_data.SOG*sin(nmea2000_data.SOG) - nmea2000_data.AWS*sin(nmea2000_data.AWD);
 			b = nmea2000_data.SOG*cos(nmea2000_data.SOG) - nmea2000_data.AWS*cos(nmea2000_data.AWD);
 			nmea2000_data.TWS = sqrt(a*a + b*b);
+			if (nmea2000_data.TWS > nmea2000_data.TWS_max)
+				nmea2000_data.TWS_max = nmea2000_data.TWS;
 			nmea2000_data.TWD = atan(a/b);
 			break;
 		case PGN_ENV_PARAM_ID:
@@ -231,7 +235,7 @@ static void *data_viewer(void *arg)
 		mvprintw( 3,0, "STW               : %5.2f m/s", nmea2000_data.STW);
 		mvprintw( 5,0, "Drift speed/angle : %5.2f m/s %3.0f°", nmea2000_data.drift_speed, RAD2DEG(nmea2000_data.drift_angle));
 		mvprintw( 7,0, "AWS/AWA/AWD       : %5.2f m/s %3.0f° %4.0f°", nmea2000_data.AWS, RAD2DEG(nmea2000_data.AWA), RAD2DEG(nmea2000_data.AWD));
-		mvprintw( 8,0, "TWS/TWD           : %5.2f m/s %3.0f°", nmea2000_data.TWS, RAD2DEG(nmea2000_data.TWD));
+		mvprintw( 8,0, "TWS(max)/TWD      : %5.2f(%5.2f) m/s %3.0f°", nmea2000_data.TWS, nmea2000_data.TWS_max, RAD2DEG(nmea2000_data.TWD));
 		mvprintw(10,0, "Rudder angle      : %3.0f°", RAD2DEG(nmea2000_data.rudder_angle));
 		mvprintw(12,0, "Vessel heading    : %3.0f°M", RAD2DEG(nmea2000_data.heading));
 		mvprintw(13,0, "Autopilot heading true/magnetic : %3.0f°T %3.0f °M",
@@ -240,18 +244,16 @@ static void *data_viewer(void *arg)
 		mvprintw(19,0, "Inside Air humidity/temp  : %4.1f %% %4.1f °C", nmea2000_data.inside_air_humidity, nmea2000_data.inside_air_temp);
 		mvprintw(20,0, "Outside Air humidity/temp : %4.1f %% %4.1f °C", nmea2000_data.outside_air_humidity, nmea2000_data.outside_air_temp);
 		mvprintw(20,45, "Atmospheric pressure : %4.1f hPa", nmea2000_data.atmospheric_pressure/100.0);
-		mvprintw(22, 0, "map url : https://www.google.com/maps/@?api=1&map_action=map&center=%f,%f&basemap=satellite",
-			nmea2000_data.longitude, nmea2000_data.latitude);
-		mvprintw(23, 0, "map url : https://www.google.com/maps/search/?api=1&query=%f,%f",
-			nmea2000_data.longitude, nmea2000_data.latitude);
-		mvprintw(25,0, "YDWG02 stats   : packets %d (%d pkts/s, errors %d), msgs %d (%d msgs/s, errors %d)",
+		//mvprintw(22, 0, "map url : https://www.google.com/maps/@?api=1&map_action=map&center=%f,%f&basemap=satellite", nmea2000_data.longitude, nmea2000_data.latitude);
+		mvprintw(22, 0, "map url : https://www.google.com/maps/search/?api=1&query=%f,%f", nmea2000_data.longitude, nmea2000_data.latitude);
+		mvprintw(23,0, "YDWG02 stats   : packets %d (%d pkts/s, errors %d), msgs %d (%d msgs/s, errors %d)",
 			ydwg_stats.packets,
 			ydwg_stats.packets - ydwg_stats_old.packets,
 			ydwg_stats.packet_errors,
 			ydwg_stats.msgs,
 			ydwg_stats.msgs - ydwg_stats_old.msgs,
 			ydwg_stats.msg_errors);
-		mvprintw(26,0, "NMEA2000 stats : msgs %d (%d msgs/s, errors %d)",
+		mvprintw(24,0, "NMEA2000 stats : msgs %d (%d msgs/s, errors %d)",
 			nmea2000_stats.msgs,
 			nmea2000_stats.msgs - nmea2000_stats_old.msgs,
 			nmea2000_stats.errors);
